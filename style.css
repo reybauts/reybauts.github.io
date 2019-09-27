@@ -5,8 +5,8 @@ body {
 
 h1 {
     color: white;
-    font-family: 'Red Hat Display', sans-serif;
-    font-weight: bold;
+    font-family: 'Hind', sans-serif;
+    font-weight: heavy;
     font-size: 1.5em;
     letter-spacing: 3px;
     
@@ -31,7 +31,7 @@ header,
 main,
 footer {
     margin: 0 auto;
-    padding: 4px;
+    padding: 3px;
        
 }
 
