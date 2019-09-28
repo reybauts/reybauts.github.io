@@ -41,7 +41,7 @@ main {
     display: grid;
     text-align: center;    
     margin: auto;
-    max-width: 1280px;
+    max-width: 430px;
     grid-gap: 5px;
     grid-template-columns: 1fr;
     
@@ -50,7 +50,7 @@ main {
 
 
 header {
-    max-width: 1280px;    
+    max-width: 430px;    
     width: auto; 
     background: #2d2d39;
     text-align: center;
@@ -65,7 +65,7 @@ header {
 }
 
 footer {    
-    max-width: 1280px;
+    max-width: 430px;
     text-align: center;
     background: #2d2d39;
     margin: auto;
