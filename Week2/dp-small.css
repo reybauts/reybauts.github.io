@@ -50,10 +50,9 @@ main {
 
 
 header {
-    max-width: 1280px;
-    
+    max-width: 1280px;    
     width: auto; 
-    background: #1f1d1de8;
+    background: #2d2d39;
     text-align: center;
     margin: auto;
     margin-bottom: 7px;
@@ -68,7 +67,7 @@ header {
 footer {    
     max-width: 1280px;
     text-align: center;
-    background: #1f1d1de8;
+    background: #2d2d39;
     margin: auto;
     margin-top: -10px;
     
