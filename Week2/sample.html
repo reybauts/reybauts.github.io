@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS grid</title>
+    <script src="/homepage/date.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Krona+One&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap');
+        
+
+        body {
+            max-width: 1280px;
+            margin: auto;
+
+        }
+
+        h1 strong{
+            font-family: 'Nunito Sans', sans-serif;
+            font-weight: 900;
+            font-size: 1.5em;
+            margin-top: 2em;
+            margin-bottom: .1em;
+            color: azure;
+            letter-spacing: 2px;
+            
+        }
+
+        h2 {
+            font-family: 'Nunito Sans', sans-serif;
+            margin-top: .5em;
+            margin-bottom: .25em;
+            color: #CCE5FF;
+            letter-spacing: 1px;
+            
+            
+        }
+        h3 {
+            font-family: 'Nunito Sans', sans-serif;
+            margin-top: .25em;
+            margin-bottom: .5em;
+            color: #FFFFCC;
+            letter-spacing: 2px;
+        }
+        p, a {
+            font-family: 'Nunito Sans', sans-serif;            
+            color: #FFFFCC;
+        }
+
+
+        .wrapper {
+            display: grid;
+            text-align: center;
+            margin: auto;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 6px;        }
+
+        .wrapper {
+            
+
+        }
+
+        .header {
+            grid-column: 1/4;
+            background: #404040;
+            
+            
+        }
+
+        .footer {
+            grid-column: 1/4;
+            text-align: center;
+            background: #404040;
+
+        }
+
+        .align,
+        .white,
+        .prox {
+            background: #404040;
+            max-width: auto;
+
+        }
+        .desc{
+            text-align: left;
+            color: white;
+            margin: 12px;        
+            
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h1><strong>DESIGN PRINCIPLES</strong></h1>
+        </div>
+        <div class="align">
+            <h2>PARC: Alignment</h2>
+            <h3>boeing.com</h3>
+            <img src="boeing.png">
+            <p class="desc">Two principles of alignment were used in this design. The edge alignment, which was applied on all the text and on the three middle images makes the content more balanced and organized. And the center alignment, which was applied on the rest of the images creates a polished and professional look.</p>
+        </div>
+        <div class="white">
+            <h2>Whitespace & Clean Design</h2>
+            <h3>uber.com</h3>
+            <img src="uber.png">
+            <p class="desc">The whitespace principle used in this design made the website look neat, simple, attractive, and easy to the eyes. It creates harmony and balance, and enables the objects on the page to exist.      .</p>
+        </div>
+        <div class="prox">
+            <h2>PARC: Proximity</h2>
+            <h3>northropgrumman.com</h3>
+            <img src="norththrop.png">
+            <p class="desc">The principle of proximity applied in this design helps visualize the different elements, reduce visual clutter, and makes the content more comprehensible. The elements are placed in close proximity to each other to establish a clear and close relationship between them. </p>
+        </div>
+        <div class="footer">
+                <p> &copy; <span id="yearspan"></span> | Rey Bautista | Washington | <a href="https://www.byui.edu/online">BYUI
+                    Online Learning</a></p>
+            <p> Last Updated <span id="modspan"></span>
+        </div>
+
+    </div>
+
+
+</body>
+
+
+</html>
