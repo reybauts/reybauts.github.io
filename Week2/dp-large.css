@@ -3,8 +3,11 @@
     main {
         grid-template-columns: 1fr 1fr 1fr;
     }
-    header, footer, main {
+
+    header,
+    footer,
+    main {
         max-width: 1310px;
 
-    }    
+    }
 }

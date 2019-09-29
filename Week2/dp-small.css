@@ -1,13 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Krona+One&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap');
-
-
 h1 {
     font-family: 'Nunito Sans', sans-serif;
     color: azure;
     letter-spacing: 2px;
-    
-    
 
 }
 
@@ -29,47 +23,51 @@ p,
 a {
     font-family: 'Nunito Sans', sans-serif;
     color: white;
-    
-    
+
+
 }
 
-main, header, footer {
+main,
+header,
+footer {
     max-width: 430px;
     margin: auto;
     text-align: center;
 }
 
-header, footer {
+header,
+footer {
     background: #333333;
 }
+
 section {
     background: #4d4d4d;
-    
+
     line-height: .5em;
 }
 
 main {
-    display: grid;     
+    display: grid;
     grid-column-gap: 7px;
     grid-template-columns: 1fr;
 
 }
 
-header {            
+header {
     font-size: 1.5rem;
     margin-bottom: 7px;
     padding-bottom: 1px;
     padding-top: 1px;
     margin-top: 10px;
-    line-height:30px;
-    
+    line-height: 30px;
+
 }
 
-footer {           
+footer {
     margin-top: 10px;
-    margin-bottom:10px;
-    padding-top:5px;
-    padding-bottom: 5px; 
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .desc {
@@ -78,5 +76,6 @@ footer {
     padding: 15px;
     line-height: 1.25em;
     font-size: 1.25em;
-    
+    font-family: 'Roboto', sans-serif;
+
 }
