@@ -3,18 +3,16 @@
 
 
 h1 {
-    font-family: 'Nunito Sans', sans-serif;   
+    font-family: 'Nunito Sans', sans-serif;
     color: azure;
-    letter-spacing: 1.5px;
-    font-size: 2.5rem;
+    letter-spacing: 2px;
+    
     
 
 }
 
 h2 {
     font-family: 'Nunito Sans', sans-serif;
-    margin-top: .5em;
-    margin-bottom: .25em;
     color: #CCE5FF;
     letter-spacing: 1px;
 
@@ -23,68 +21,62 @@ h2 {
 
 h3 {
     font-family: 'Nunito Sans', sans-serif;
-    margin-top: .25em;
-    margin-bottom: .5em;
     color: #FFFFCC;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
 }
 
 p,
 a {
     font-family: 'Nunito Sans', sans-serif;
-    color: #FFFFCC;
-    padding: 10px;
+    color: white;
+    
+    
 }
 
+main, header, footer {
+    max-width: 430px;
+    margin: auto;
+    text-align: center;
+}
+
+header, footer {
+    background: #333333;
+}
+section {
+    background: #4d4d4d;
+    
+    line-height: .5em;
+}
 
 main {
-    display: grid;
-    text-align: center;    
-    margin: auto;
-    max-width: 430px;
-    grid-gap: 5px;
+    display: grid;     
+    grid-column-gap: 7px;
     grid-template-columns: 1fr;
-    
+
 }
 
-
-
-header {
-    max-width: 430px;    
-    width: auto; 
-    background: #2d2d39;
-    text-align: center;
-    margin: auto;
+header {            
+    font-size: 1.5rem;
     margin-bottom: 7px;
-    padding-bottom: 7px;
+    padding-bottom: 1px;
     padding-top: 1px;
-
+    margin-top: 10px;
+    line-height:30px;
     
-
-
 }
 
-footer {    
-    max-width: 430px;
-    text-align: center;
-    background: #2d2d39;
-    margin: auto;
-    margin-top: -10px;
-    
-    
-
-}
-
-section {
-    
-    background: #484649 ;    
-    
-
+footer {           
+    margin-top: 10px;
+    margin-bottom:10px;
+    padding-top:5px;
+    padding-bottom: 5px; 
 }
 
 .desc {
     text-align: left;
     color: white;
-   
-
+    padding: 15px;
+    line-height: 1.25em;
+    font-size: 1.25em;
+    
 }
