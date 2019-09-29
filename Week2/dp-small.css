@@ -1,14 +1,16 @@
 h1 {
     font-family: 'Nunito Sans', sans-serif;
-    color: azure;
-    letter-spacing: 2px;
-
+    color: white;
+    padding-top: 20px;
+    font-stretch: expanded;
+    
 }
 
 h2 {
     font-family: 'Nunito Sans', sans-serif;
     color: #CCE5FF;
     letter-spacing: 1px;
+    padding-bottom: 10px;
 
 
 }
@@ -42,7 +44,6 @@ footer {
 
 section {
     background: #4d4d4d;
-
     line-height: .5em;
 }
 
@@ -50,17 +51,14 @@ main {
     display: grid;
     grid-column-gap: 7px;
     grid-template-columns: 1fr;
+    margin-top: -20px;
 
 }
 
 header {
     font-size: 1.5rem;
-    margin-bottom: 7px;
-    padding-bottom: 1px;
-    padding-top: 1px;
-    margin-top: 10px;
-    line-height: 30px;
-
+    margin-bottom: 1px;    
+    margin-top: 1px; 
 }
 
 footer {
@@ -78,4 +76,8 @@ footer {
     font-size: 1.25em;
     font-family: 'Roboto', sans-serif;
 
+}
+
+.rey {
+    color: beige
 }
