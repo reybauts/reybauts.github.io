@@ -1,30 +1,27 @@
 h1 {
     font-family: 'Nunito Sans', sans-serif;
-    color: white;
-    padding-top: 20px;
-    font-stretch: expanded;
-    
+    color: white;   
+        
 }
 
 h2 {
     font-family: 'Nunito Sans', sans-serif;
     color: #CCE5FF;
     letter-spacing: 1px;
-    padding-bottom: 10px;
+    
 
 
 }
 
-h3 {
-    font-family: 'Nunito Sans', sans-serif;
-    color: #FFFFCC;
+h3 {    
+    color: bisque;
     letter-spacing: 1.5px;
 }
 
-p,
-a {
+p, a
+ {
     font-family: 'Nunito Sans', sans-serif;
-    color: white;
+    color: beige;
 
 
 }
@@ -51,21 +48,16 @@ main {
     display: grid;
     grid-column-gap: 7px;
     grid-template-columns: 1fr;
-    margin-top: -20px;
+    margin-top: 7px;
 
 }
-
-header {
-    font-size: 1.5rem;
-    margin-bottom: 1px;    
-    margin-top: 1px; 
-}
+    
 
 footer {
     margin-top: 10px;
     margin-bottom: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
 }
 
 .desc {
@@ -77,7 +69,19 @@ footer {
     font-family: 'Roboto', sans-serif;
 
 }
+.pod {
+    font-size: 60px;
+    margin-top: 5px;
+    margin: 5px;
+    padding-top: 10px;   
+    
+}
 
 .rey {
-    color: beige
+    font-size: 40px;
+    color: beige; 
+    margin:10px;
+    padding-bottom: 10px;      
+    
 }
+
