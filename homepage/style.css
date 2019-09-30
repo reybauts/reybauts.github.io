@@ -6,7 +6,7 @@ body {
 h1 {
     color: white;
     font-family: 'Hind', sans-serif;
-    font-size: 1.75rem;
+    font-size: 2rem;
     letter-spacing: 3px;
 
 }
@@ -56,7 +56,8 @@ footer {
 
 }
 
-.lesson {
+main {
+    margin-left: 5px;
     line-height: 1.5em;
     font-size: 1.2em;
     text-decoration: none;
