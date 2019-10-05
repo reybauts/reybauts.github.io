@@ -3,6 +3,11 @@
     nav ul {    
         display: flex;
         flex-flow: row;
+    }
+    nav ul {    
+       
+        justify-content: space-evenly;
+        
     }     		 
     
 }
