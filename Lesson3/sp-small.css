@@ -19,7 +19,7 @@ header, footer {
     background:  #1c1c57;
     text-align: center;
 }
-section {
+section, .fonts {
     background: #e4f0f3;
     padding: 5px 10px;
     
@@ -84,8 +84,9 @@ h2 {
     border-bottom: 1px solid #000000;
         
 }
-section p, #target, #typography{
+section p, #target, #typography, .scenario{
     font-family: 'Open Sans', sans-serif;
+    line-height: 1.5em;
 }
 
 footer p {
@@ -107,47 +108,35 @@ footer #byui {
 
 
 
-#persona {
-    display: grid;
-    grid-template-columns: 1fr 3fr;        
-    padding: 10px;    
+.personas {
+    display: table;
+    text-align: left;       
     font-family: 'Open Sans', sans-serif;   
     background: #e4f0f3;
-    margin-bottom: 20px;
-}
+    margin-bottom: 20px;    
+    border-collapse: collapse;  
 
-.tar {
-    line-height: 1.5em;
 }
-
-
-.randy {
-    width: 200px;
+table, tr, td, th {
+    padding: 10px;
+    border: 1px solid rgb(223, 215, 215);
 }
- div {       
-    padding:  1em;    
-  }   
- .left {
-     align-self: center;
- }
-table {
+.randy, .neo {
+    height: 250px;
+}
+ 
+.colors {
     font-family: 'Nunito', sans-serif;    
     border-collapse: collapse;    
     width: 100%;
     margin-bottom: 30px;
-        
-}
-th {
-    padding: 15px;
-    background-color: #abcac2;
-    
-    
-}    
-td {
-    padding: 15px;
+    border: lpx solid black;
+}        
+ 
+table.colors {    
     border-bottom: 1px;
     text-align: center;
-    width:300px;    
+     
 }
 
 .nunito {
@@ -181,11 +170,5 @@ td {
     font-size: 25px;
     margin: 0px;
     text-align: left;
-    color: rgb(7, 78, 78)
-    
+    color: rgb(7, 78, 78)    
 }
-.cocklogo {
-    align-items: center;
-
-}
-
