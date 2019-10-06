@@ -9,7 +9,7 @@
 
 
 
-main, header, nav, footer, table {
+body, header, footer{
     margin: 10px;
     max-width: 960px;
     margin: auto;
@@ -25,6 +25,7 @@ section, .fonts {
     
     
     
+    
 }
 
 header h1 {
@@ -37,31 +38,31 @@ header h1 {
     font-size: 3em;
          
 }
-
-
-nav ul {    
+nav {
     background-color: rgb(70, 87, 184);
-    padding: 0px;
-    display: block;    		 
     text-align: center;
-    justify-content: space-evenly;
-    margin: 0px;      
-    list-style-type: none;
-    
+
 }
-nav li {
-    font-family: 'Nunito Sans', sans-serif; 
-    font-weight: 500;   
-    font-size: 1.125m;
-    padding: 10px;    
+
+nav ul {
+    list-style-type: none;   
+    padding: 0;    
+    margin: 0;  
+    overflow: hidden;    
 }
 nav li a {
+    font-family: 'Nunito Sans', sans-serif;
+    display: block;
     text-decoration: none;
-    color: beige; 
+    color: beige;
+    text-align: center;
+    padding: .75em; 
 }
+
 nav li:hover {
 	background-color: #93aacc;
     color: #36454f;
+    height:100%;
     
 }    
 nav .active {
