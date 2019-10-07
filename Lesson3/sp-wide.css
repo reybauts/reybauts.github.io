@@ -1,13 +1,16 @@
 @media only screen and (min-width: 32.5em) {
+
+    header h1 {
+        font-size: 3em;
+    }
    
     nav ul {    
         display: flex;
-        flex-flow: row;
-    }
-    nav ul {    
-       
-        justify-content: space-evenly;
         
+    }
+    nav li {            
+       flex: 1 1 100%;
+       justify-content: space-evenly;
     }     		 
     
 }
