@@ -12,5 +12,11 @@
        flex: 1 1 100%;
        justify-content: space-evenly;
     }     		 
+    .nunito, .opensans, .roboto, .bsd {
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-weight: 600; 
+    margin: auto;
+    }
     
 }
