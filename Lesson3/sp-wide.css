@@ -4,7 +4,8 @@
         font-size: 3em;
     }
    
-    nav ul {    
+    nav ul {
+           
         display: flex;
         
     }
