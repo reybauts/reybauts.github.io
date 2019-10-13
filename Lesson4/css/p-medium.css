@@ -24,9 +24,7 @@
         width: auto;
         padding: 0;
         display: block;
-
     }
-    
     .navigation a{
         font-size: 1em;
     }
@@ -36,14 +34,11 @@
 		justify-content: center;
 		margin: auto;
 	}
-
 	.navigation li:first-child {
 		display: none;
 	}
-
 	.navigation li {
 		display: block;
-		
 	}
 	.ms {
 		font-size: 25px;
@@ -55,7 +50,4 @@
     footer {
         max-width: 860px;
     }
-
-
-
 }

@@ -2,18 +2,14 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Display:400,500,600,700,800,900&display=swap');
-
 main {
-    
     background-color: #e4f0f3;
     margin: 10px auto;
 }
 body {
     padding: 0;
     margin: 0;
-    
 }
-
 header {
     background-color: #1c1c57;
     padding: 20px 0;
@@ -23,7 +19,6 @@ header {
 .menus {
     font-size: 1.25em;
 }    
-    
 img {
     height: 60px;
     width: auto;  
@@ -51,13 +46,16 @@ img {
     font-size: 25px;
     font-weight: 700;
     letter-spacing: 1px;
-    
 }
 nav {
-    background-color: rgb(70, 87, 184);
+    background-color: /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#49a7e5+0,141693+100 */
+    background: rgb(73,167,229); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(73,167,229,1) 0%, rgba(20,22,147,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(73,167,229,1) 0%,rgba(20,22,147,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(73,167,229,1) 0%,rgba(20,22,147,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#49a7e5', endColorstr='#141693',GradientType=0 ); /* IE6-9 */
+    );
     text-align: center;
-    
-    
 }
 nav ul {
     list-style-type: none;   
@@ -71,16 +69,12 @@ nav li a {
     text-decoration: none;
     color: beige;
     text-align: center;
-    
-     
 }
 nav li:hover {
 	background-color: #93aacc;
     color: #36454f;
     height:100%;    
 }    
-
-
 .navigation {
 	list-style: none;
 	text-align: center;
@@ -118,10 +112,6 @@ li .active{
 .responsive li {
     display: block;
 }
-
-
-
-
 .ms {
     width: auto;
     margin: 15px;
@@ -132,7 +122,6 @@ li .active{
     font-style: italic;
     font-weight: 700;
     font-size: 25px;
-
 }
 .mt {
     font-size: 30px;
@@ -141,30 +130,24 @@ li .active{
     padding-top: 20px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
-
-
 }
 section {
     padding: 10px 0;
-    
-    
 }
 footer p {
-    margin: 0px;
-    padding: 10px;    
+    margin: auto;     
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
     list-style-type: none;
     text-align: center;
 }  
 footer {
-    
+    position: relative;
     margin: auto;
     margin-top: 10px; 
     color: white;
-    background-color: #1c1c57;    
-    align-content: center;
-    align-items: center;
+    background-color: #1c1c57;   
+    padding: 15px 0;
 }
 footer #byui {
     color: #f5deb3;
