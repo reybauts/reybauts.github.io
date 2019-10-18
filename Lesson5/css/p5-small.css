@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,600,600i,700,700i,800,800i,900,900i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,600,600i,700,700i,800,800i,900,&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Display:400,500,600,700,800,900&display=swap');
@@ -115,10 +115,8 @@ li .active {
 .responsive li {
     display: block;
 }
-
-
 .city {
-    font-size: 2.5rem;
+    font-size: 1.75rem;
     text-align: center;
     margin: 0 0 20px 0;
     padding-top: 20px;
@@ -127,7 +125,6 @@ li .active {
     letter-spacing: 1px;
     text-shadow: 3px 3px 5px gray;
     color: rgb(15, 78, 107);
-    
 }
 footer p {
     margin: auto;
@@ -151,43 +148,42 @@ footer #byui {
 .hero-ws {
     position: relative;
 }
-.hero-ws > * {
+.hero-ws>* {
     position: absolute;
 }
 .hero {
-    top: 10px;
-    left: 30px;
+    top: 5px;
+    left: 20px;
 }
 .preston-img {
     position: relative;
     width: 100%;
-    height: auto; 
+    height: auto;
     z-index: -1;
     box-shadow: 5px 5px 15px gray;
-      
 }
-.hero {             
+.hero {
     font-family: 'Nunito Sans', sans-serif;
     padding: 10px 0;
-    width: 250px;   
+    width: 220px;
     background-color: rgb(7, 18, 39);
     opacity: .8;
 }
 .hero li {
     list-style-type: none;
     padding: 0px;
-    font-size: 1em;
+    font-size: .9em;
     color: white;
     font-weight: 700;
 }
 .ws-info {
-    position: relative;    
+    position: relative;
     text-align: center;
     text-decoration: underline;
 }
 .hero b {
     display: inline-block;
-    width:60%;
+    width: 60%;
     text-align: right;
     position: relative;
     padding-right: 10px;
@@ -201,9 +197,9 @@ footer #byui {
 #forecast-header {
     text-align: center;
     font-family: 'Nunito Sans', sans-serif;
-    font-size: 1.55em;
     font-weight: 800;
     margin-bottom: 10px;
+    font-size: 2em;
 }
 .forecast-block {
     display: flex;
@@ -218,17 +214,14 @@ footer #byui {
     font-size: 16px;
     text-align: center;
     padding: 5px;
-
 }
-
-
 .day {
     display: block;
     padding: 6px;
-    margin-bottom:10px;
+    margin-bottom: 10px;
     font-weight: 600;
     font-size: 1.5em;
-    letter-spacing: 2px;    
+    letter-spacing: 2px;
     background-color: rgb(36, 109, 143);
     color: wheat;
     font-family: 'Roboto', sans-serif;
@@ -250,15 +243,14 @@ footer #byui {
     margin: 30px 0;
 }
 .park {
-    display: block;    
+    display: block;
     width: 60%;
-    height: auto;    
+    height: auto;
     box-shadow: 5px 5px 10px gray;
     margin: auto;
     justify-items: center;
     text-align: center;
     justify-content: center;
-    
 }
 .article-header {
     font-family: 'Nunito Sans', sans-serif;
@@ -276,7 +268,7 @@ footer #byui {
     font-weight: 700;
     text-align: center;
 }
-.article p{
+.article p {
     font-size: 1em;
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -322,3 +314,94 @@ footer #byui {
 .read {
     color: blue
 }
+.visuallyHidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+h1 {
+    text-align: center;
+}
+.container {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.hamburger {    
+    margin: -15px auto 10px;
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+.hamburger .bar {
+    padding: 0;
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    display: block;
+    border-radius: 4px;
+    transition: all 0.4s ease-in-out;
+    position: absolute;
+}
+.bar1 {
+    top: 0;
+}
+.bar2,
+.bar3 {
+    top: 12px;
+}
+.bar3 {
+    right: 0;
+}
+.bar4 {
+    bottom: 0;
+}
+/* HAMBURGER 1 */
+.checkbox1:checked+label>.hamburger1>.bar1 {
+    transform: rotate(45deg);
+    transform-origin: 5%;
+    width: 39px
+}
+.checkbox1:checked+label>.hamburger1>.bar2 {
+    transform: translateX(-50px);
+    background-color: transparent;
+}
+.checkbox1:checked+label>.hamburger1>.bar3 {
+    transform: translateX(50px);
+    background-color: transparent;
+}
+.checkbox1:checked+label>.hamburger1>.bar4 {
+    transform-origin: 5%;
+    transform: rotate(-45deg);
+    width: 39px;
+}
+.checkbox1 {
+    position: relative;
+}
+.sub-menu {
+    visibility: hidden;
+    /* hides sub-menu */
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-2em);
+    z-index: -1;
+    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+.sub-menu-parent:focus .sub-menu,
+.sub-menu-parent:focus-within .sub-menu,
+.sub-menu-parent:hover .sub-menu {
+    visibility: visible;
+    /* shows sub-menu */
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(0%);
+    transition-delay: 0s, 0s, 0.3s;
