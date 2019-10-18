@@ -8,3 +8,13 @@ function initial() {
 	yearspan.innerHTML = currentYear.getFullYear();
 }
 window.onload = initial;
+
+$(document).ready(function () {
+	var d = new Date();
+    var dayOfWeek = d.getDay();
+    
+    // If it is Friday show banner
+    if (dayOfWeek === 5) {
+        $('.banner').show();
+    }
+});

@@ -9,9 +9,17 @@ body {
     padding: 0;
     margin: 0;
 }
+.banner {
+    text-align: center;
+    font-size: 1.15em;
+    padding: 10px 0;
+    background-color: rgb(233, 235, 139);
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 800;
+}
 header {
     background-color: #1c1c57;
-    padding: 25px 0;
+    padding: 20px 0;
     display: flex;
     justify-content: center;
 }

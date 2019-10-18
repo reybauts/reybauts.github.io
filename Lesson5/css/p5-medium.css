@@ -3,6 +3,9 @@
 		max-width: 800px;
 		margin: 10px auto;
 	}
+	.banner {
+		font-size: 1.25em;
+	}
 
 	img {
 		height: 80px;
