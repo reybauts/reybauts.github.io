@@ -48,13 +48,12 @@ img {
     letter-spacing: 1px;
 }
 nav {
-    background-color: /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#49a7e5+0,141693+100 */
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#49a7e5+0,141693+100 */
     background: rgb(73,167,229); /* Old browsers */
     background: -moz-linear-gradient(top,  rgba(73,167,229,1) 0%, rgba(20,22,147,1) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top,  rgba(73,167,229,1) 0%,rgba(20,22,147,1) 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom,  rgba(73,167,229,1) 0%,rgba(20,22,147,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#49a7e5', endColorstr='#141693',GradientType=0 ); /* IE6-9 */
-    );
     text-align: center;
 }
 nav ul {
@@ -85,14 +84,14 @@ nav li:hover {
 	display: block;
 }
 .navigation li:first-child a{
-    color:whitesmoke;
+    color:white;
     }
 .navigation li {
 	display: none;
 }
 .navigation a {
 	display: block;
-	color: #fff;
+	color: white;
 	padding: 0.75rem;
 	text-align: center;
     text-decoration: none;
@@ -153,3 +152,4 @@ footer #byui {
     color: #f5deb3;
     text-decoration: none;
 }
+

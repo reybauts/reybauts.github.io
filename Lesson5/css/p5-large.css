@@ -1,0 +1,25 @@
+@media only screen and (min-width: 60em) {	
+	main, footer{
+		max-width: 1100px;
+	}
+	.navigation {
+		display: flex;
+		width: 1100px;
+		justify-content: center;
+		margin: auto;
+	}
+	nav li {
+		display: block;
+		justify-content: center;
+		margin: auto;
+		font-size: 1.125em;
+		width: 180px;
+	}
+	.mt{
+		font-size: 50px;
+	}
+	.forecast {
+        display: inline;
+        margin: auto;
+    }
+}
