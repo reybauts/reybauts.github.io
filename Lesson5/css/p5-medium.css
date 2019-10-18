@@ -1,6 +1,7 @@
 @media only screen and (min-width: 45em) {
+
     main {
-        max-width: 860px;        
+        max-width: 800px;        
         margin: 10px auto;
     }
     img {
@@ -20,16 +21,16 @@
 	nav li {
 		justify-content: center;
 		margin: auto;		
-        width: auto;
+        width: 100%;
         padding: 0;
         display: block;
     }
     .navigation a{
-        font-size: 1em;
+        font-size: .9em;
     }
 	.navigation {
 		display: flex;
-		width: 860px;
+		width: 900px;
 		justify-content: center;
 		margin: auto;
 	}
@@ -47,6 +48,17 @@
         font-size: 40px;
     }
     footer {
-        max-width: 860px;
-    }
+        max-width: 800px;
+	}
+	.park {
+		float: right;
+		margin: 10px;
+	}	
+	.forecast {
+        display: inline;
+        margin: auto;
+	}
+	.map {
+		display: inherit;
+	}
 }

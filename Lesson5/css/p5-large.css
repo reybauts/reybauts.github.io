@@ -1,10 +1,11 @@
-@media only screen and (min-width: 60em) {	
+@media only screen and (min-width: 60em) 
+{	
 	main, footer{
-		max-width: 1100px;
+		max-width: 1024px;
 	}
 	.navigation {
 		display: flex;
-		width: 1100px;
+		width: 1024px;
 		justify-content: center;
 		margin: auto;
 	}
@@ -13,13 +14,18 @@
 		justify-content: center;
 		margin: auto;
 		font-size: 1.125em;
-		width: 180px;
+		width: 100%
 	}
-	.mt{
-		font-size: 50px;
-	}
+	
 	.forecast {
         display: inline;
         margin: auto;
-    }
+	}
+	map {
+		display: inherit;
+	}
+	.park {
+		float: right;
+		margin: 10px;
+	}	
 }

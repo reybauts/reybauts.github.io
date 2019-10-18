@@ -115,25 +115,19 @@ li .active {
 .responsive li {
     display: block;
 }
-.ms {
-    width: auto;
-    margin: 15px;
-    padding-left: 40px;
-    border: 1px dashed;
-    align-items: center;
-    font-family: 'Open Sans', sans-serif;
-    font-style: italic;
-    font-weight: 700;
-    font-size: 25px;
-}
-.mt {
-    font-size: 30px;
+
+
+.city {
+    font-size: 2.5rem;
     text-align: center;
-    margin: 0;
+    margin: 0 0 20px 0;
     padding-top: 20px;
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 800;
     letter-spacing: 1px;
+    text-shadow: 3px 3px 5px gray;
+    color: rgb(15, 78, 107);
+    
 }
 footer p {
     margin: auto;
@@ -162,20 +156,22 @@ footer #byui {
 }
 .hero {
     top: 10px;
-    left: 20px;
+    left: 30px;
 }
 .preston-img {
     position: relative;
     width: 100%;
     height: auto; 
-    z-index: -1;    
+    z-index: -1;
+    box-shadow: 5px 5px 15px gray;
+      
 }
 .hero {             
     font-family: 'Nunito Sans', sans-serif;
     padding: 10px 0;
     width: 250px;   
     background-color: rgb(7, 18, 39);
-    opacity: .75;
+    opacity: .8;
 }
 .hero li {
     list-style-type: none;
@@ -185,8 +181,7 @@ footer #byui {
     font-weight: 700;
 }
 .ws-info {
-    position: relative;
-    font-size: 1.50em;
+    position: relative;    
     text-align: center;
     text-decoration: underline;
 }
@@ -196,23 +191,26 @@ footer #byui {
     text-align: right;
     position: relative;
     padding-right: 10px;
-    color: wheat;
+    color: rgb(113, 233, 16);
 }
 .forecast {
+    display: none;
     justify-items: center;
+    margin: auto;
 }
 #forecast-header {
     text-align: center;
     font-family: 'Nunito Sans', sans-serif;
     font-size: 1.55em;
     font-weight: 800;
-    margin: 10px;
+    margin-bottom: 10px;
 }
 .forecast-block {
     display: flex;
     flex-direction: row;
     width: 70%;
     margin: auto;
+    box-shadow: 5px 5px 15px gray;
 }
 .weekday {
     flex: 1 1 100%;
@@ -220,17 +218,24 @@ footer #byui {
     font-size: 16px;
     text-align: center;
     padding: 5px;
+
 }
+
+
 .day {
     display: block;
-    padding: 10px;
-    margin-bottom:15px;
+    padding: 6px;
+    margin-bottom:10px;
     font-weight: 600;
-    font-size: 1.55em;
+    font-size: 1.5em;
     letter-spacing: 2px;    
     background-color: rgb(36, 109, 143);
     color: wheat;
     font-family: 'Roboto', sans-serif;
+}
+.d-icon {
+    width: 50%;
+    height: auto;
 }
 .data {
     display: block;
@@ -242,30 +247,38 @@ footer #byui {
 .article {
     padding: 20px;
     background-color: #e4f0f3;
-    margin: 20px 0;
+    margin: 30px 0;
 }
 .park {
+    display: block;    
     width: 60%;
-    height: auto;
-    float: right;
+    height: auto;    
+    box-shadow: 5px 5px 10px gray;
+    margin: auto;
+    justify-items: center;
+    text-align: center;
+    justify-content: center;
+    
 }
 .article-header {
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 800;
     margin: 0;
-    padding: 0;
+    padding-top: 20px;
+    text-align: center;
 }
 .article-author {
     margin: 0;
     padding: 5px 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     font-style: italic;
     color: rgba(20, 22, 147, 1);
-    font-weight: 800;
+    font-weight: 700;
+    text-align: center;
 }
-.p-article {
-    font-size: 1.1em;
-    font-family: 'Open Sans', sans-serif;
+.article p{
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 5px 0;
 }
@@ -277,30 +290,35 @@ footer #byui {
     align-items: center;
 }
 .map {
+    display: none;
     width: 30%;
     height: auto;
     margin-right: 15%;
     justify-content: center;
     text-align: center;
+    box-shadow: 5px 5px 15px gray;
 }
-.tw {
+.tw-title {
     width: 100%;
-    font-size: 1.5rem;
-    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3rem;
+    font-family: 'Nunito Sans', sans-serif;
     font-weight: 700;
     margin: 0;
     padding: 5px 0;
 }
 .info>h3 {
     display: block;
-    font-size: 1.125rem;
+    font-size: 1rem;
     font-family: 'Open Sans', sans-serif;
     padding: 5px 0;
     margin: 0;
     font-weight: 700;
 }
 .soc-media {
-    padding: 1%;
+    padding: 2px;
     width: 2em;
     height: auto;
+}
+.read {
+    color: blue
 }
