@@ -7,14 +7,20 @@ function initial() {
 	var currentYear = new Date();
 	yearspan.innerHTML = currentYear.getFullYear();
 }
+
 window.onload = initial;
+
+function UpdateDates() {
+    GetCurrentYear();
+	GetCurrentDate();
+}
 
 $(document).ready(function () {
 	var d = new Date();
-    var dayOfWeek = d.getDay();
-    
-    // If it is Friday show banner
-    if (dayOfWeek === 5) {
-        $('.banner').show();
+    var day = d.getDay();   
+   
+    if (day === 5) {
+        $('.friday').show();
     }
 });
+
