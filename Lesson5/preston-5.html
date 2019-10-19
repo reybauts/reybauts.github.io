@@ -7,11 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Rey Bautista">
     <meta name="description" content="Week 4-Preston Page">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,600,600i,700,700i,800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600i,700,700i,800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Display:400,500,600,700,800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="css/p5-small.css">
     <link rel="stylesheet" href="css/p5-medium.css">
     <link rel="stylesheet" href="css/p5-large.css">
     <link rel="shortcut icon" type="image/png" href="images/favicon.ico" />
+    <script>
+        src = "https://code.jquery.com/jquery-3.4.1.js"
+    </script>
     <script src="js/script5.js"></script>
 </head>
 
@@ -35,7 +46,7 @@
                     <span class="bar bar4"></span>
                 </div>
             </label>
-            </a></li>
+            
             <li><a href="#">Home</a></li>
             <li><a class="active">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
@@ -46,8 +57,7 @@
     </nav>
     <main>
         <h2 class="city">Preston, Idaho</h2>
-
-        <section class="hero-ws">
+        <div class="hero-ws">
             <img class="preston-img" src="images/preston.jpg" alt="Preston image">
             <ul class="hero">
                 <li class="ws-info">Weather Summary</li>
@@ -57,8 +67,7 @@
                 <li><b>Humidity:</b>90%</li>
                 <li><b>Wind Speed:</b>18mph</li>
             </ul>
-
-        </section>
+        </div>
         <section class="forecast">
             <h3 id="forecast-header">5-Day Forecast</h3>
             <div class="forecast-block">
@@ -108,7 +117,8 @@
 
             <p>In Pocatello, the Festival of Trees has a tradition of excellence and elegance developed over many years.
                 It is held in a stunning venue atop the Pocatello hillsides which adds to the event’s beauty and
-                interest. <a class="read" href="https://www.sd25.us/FOT/Content/about"> read the full article</a></p>
+                interest. <a class="read" href="https://www.sd25.us/FOT/Content/about" target="_blank"> read the full
+                    article</a></p>
         </section>
         <section class="contact">
             <img class="map" src="images/preston-map.jpg" alt="Preston Map">
@@ -118,22 +128,22 @@
                 <h3>&nbsp; &nbsp; &nbsp; Preston, Idaho 83263</h3>
                 <h3>&#128222; 1-800-626-COCK</h3>
                 <h3>&#128231; info@weathercock.com</h3>
-                <a href="https://www.facebook.com/"><img class="soc-media" src="images/fb-icon.png"
+                <a href="https://www.facebook.com/" target="_blank"><img class="soc-media" src="images/fb-icon.png"
                         alt="Facebook icon"></a>
-                <a href="https://twitter.com/"><img class="soc-media" src="images/tweet-icon.png"
+                <a href="https://twitter.com/" target="_blank"><img class="soc-media" src="images/tweet-icon.png"
                         alt="Tweeter icon"></a>
-                <a href="https://www.pinterest.com/"><img class="soc-media" src="images/pint-icon.png"
+                <a href="https://www.pinterest.com/" target="_blank"><img class="soc-media" src="images/pint-icon.png"
                         alt="Pinterest icon"></a>
-                <a href="https://www.instagram.com//"><img class="soc-media" src="images/insta-icon.png"
+                <a href="https://www.instagram.com//" target="_blank"><img class="soc-media" src="images/insta-icon.png"
                         alt="Instagram icon"></a>
-                <a href="https://web.whatsapp.com/"><img class="soc-media" src="images/whats-icon.png"
+                <a href="https://web.whatsapp.com/" target="_blank"><img class="soc-media" src="images/whats-icon.png"
                         alt="Whatsapp icon"></a>
             </div>
         </section>
     </main>
     <footer>
         <p> &copy; <span id="yearspan"></span> The Weathercock &#9728; Rey Bautista &#9770; <a id="byui"
-                href="https://www.byui.edu/online">BYU-Idaho</a></p>
+                href="https://www.byui.edu/online" target="_blank">BYU-Idaho</a></p>
         <p id="date"></p>
     </footer>
 </body>
