@@ -19,15 +19,14 @@
     <link rel="stylesheet" href="css/p5-small.css">
     <link rel="stylesheet" href="css/p5-medium.css">
     <link rel="stylesheet" href="css/p5-large.css">
-    <link rel="shortcut icon" type="image/png" href="images/favicon.ico" />
-    <script>
-        src = "https://code.jquery.com/jquery-3.4.1.js"
-    </script>
-    <script src="js/script5.js"></script>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico">
+    <script src="js/p5-script.js"></script>
 </head>
 
 <body onload="UpdateDates()">
-    <div class="friday">Saturday = Preston Pancakes in the Park!<br>9:00 a.m. Saturday at the city park pavilion.</div>
+    <div class="top-banner">
+        Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
+    </div>
     <header>
         <picture><img src="images/cock.png" alt="cock logo"></picture>
         <section class="headings">
@@ -46,7 +45,7 @@
                     <span class="bar bar4"></span>
                 </div>
             </label>
-            
+
             <li><a href="#">Home</a></li>
             <li><a class="active">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
@@ -142,8 +141,8 @@
         </section>
     </main>
     <footer>
-        <p> &copy; <span id="yearspan"></span> The Weathercock &#9728; Rey Bautista &#9770; <a id="byui"
+        <p> &copy; <span id="copyrightDate"></span> The Weathercock &#9728; Rey Bautista &#9770; <a id="byui"
                 href="https://www.byui.edu/online" target="_blank">BYU-Idaho</a></p>
-        <p id="date"></p>
+        <p id="currentDate"></p>
     </footer>
 </body>

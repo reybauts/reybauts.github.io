@@ -10,17 +10,23 @@ function initial() {
 
 window.onload = initial;
 
-function UpdateDates() {
+
+function UpdateDates()
+{
     GetCurrentYear();
-	GetCurrentDate();
+    GetCurrentDate();
 }
 
-$(document).ready(function () {
-	var d = new Date();
-    var day = d.getDay();   
-   
-    if (day === 5) {
-        $('.friday').show();
+
+function show_pancakes_msg (){
+    var d = new Date();
+    var message = document.getElementsByClassName("pancakes")[0];
+    if (d.getDay() == 5){
+    message.style.display = "block";
     }
-});
+    else {
+    message.style.display = "none";
+    }
+}
+
 
