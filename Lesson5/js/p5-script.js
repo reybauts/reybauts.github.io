@@ -33,3 +33,10 @@ function GetCurrentDate() {
 	today = day + ', ' + dd + ' ' + mm + ' ' + yyyy;
 	document.getElementById("currentDate").innerHTML = today;
 }
+
+/*function onClickMenu(){
+	document.getElementById("menu").classList.toggle("change");
+	document.getElementById("nav").classList.toggle("change");
+	
+	document.getElementById("menu-bg").classList.toggle("change-bg");
+}*/
