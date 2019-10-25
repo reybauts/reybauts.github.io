@@ -117,7 +117,7 @@ li .active {
     font-weight: 800;
     letter-spacing: 1px;
     text-shadow: 3px 3px 5px gray;
-    color: rgb(15, 78, 107);
+    color: rgb(6, 34, 126);
 }
 footer p {
     margin: auto;
@@ -159,18 +159,18 @@ footer #byui {
 .hero {
     font-family: 'Nunito Sans', sans-serif;
     padding: 10px;    
-    background-color: rgb(7, 18, 39);
-    opacity: .8;
+    background-color: black;
+    opacity: .7;
 }
 
 
 .condition {
     text-align: right;
-    color: wheat;
+    color: white;
     padding: 5px;
 }
 .info {
-    color:  yellowgreen;
+    color:  rgb(170, 241, 28);
     font-weight: 700;
 }    
 
