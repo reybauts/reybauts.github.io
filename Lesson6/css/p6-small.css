@@ -153,8 +153,7 @@ footer #byui {
     width: 100%;
     height: auto;
     z-index: -1;
-    box-shadow: 5px 5px 15px gray;
-    
+    box-shadow: 5px 5px 15px gray;    
 }
 .hero {
     font-family: 'Nunito Sans', sans-serif;
@@ -167,7 +166,7 @@ footer #byui {
 .condition {
     text-align: right;
     color: white;
-    padding: 5px;
+    padding: 2px;
 }
 .info {
     color:  rgb(170, 241, 28);

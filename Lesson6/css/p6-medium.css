@@ -43,6 +43,9 @@
 	.navigation li {
 		display: block;
 	}
+	.condition {
+		padding: 3px;
+	}
 	.ms {
 		font-size: 25px;
 		font-weight: bold;
