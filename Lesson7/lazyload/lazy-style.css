@@ -20,6 +20,6 @@ img[data-src] {
 }
   
 img {
-    filter: blur(5px);
+    filter: blur(0.2em);
     transition: filter 0.5s;
 }
