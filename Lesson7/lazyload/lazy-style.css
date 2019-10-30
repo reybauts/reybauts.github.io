@@ -15,10 +15,7 @@ img {
     box-shadow: 5px 5px 10px gray;   
     
 }
-img[data-src] {
-    filter: blur(0.2em);
-}
-  
+
 img {
     filter: blur(0.2em);
     transition: filter 0.5s;
