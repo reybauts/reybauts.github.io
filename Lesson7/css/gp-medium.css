@@ -1,7 +1,7 @@
-@media only screen and (min-width: 45em) {
+@media only screen and (min-width: 55em) {
 	main,
 	footer {
-		max-width: 960px;
+		max-width: 800px;
 		margin: 10px auto;
 	}
 	.banner {
@@ -33,7 +33,7 @@
 	}
 	.navigation {
 		display: flex;
-		width: 900px;
+		min-width: 800px;
 		justify-content: center;
 		margin: auto;
 	}
@@ -82,5 +82,15 @@
 	}
 	.container, .visuallyHidden, .hamburger {
 		display: none;
+	}
+	.gallery {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		justify-content: center;
+		text-align: center;
+		margin: 0;
+		padding: 0;
+
+
 	}
 }

@@ -1,38 +1,52 @@
 @media only screen and (min-width:65em) {
+
 	main,
 	footer {
 		max-width: 1024px;
 	}
+
 	.navigation {
 		display: flex;
 		width: 1024px;
 		justify-content: center;
 		margin: auto;
 	}
+
 	nav li {
 		display: block;
 		justify-content: center;
 		margin: auto;
 		font-size: 1.125em;
 		width: 100%
+	}	
+
+	.gallery {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		justify-content: center;
+		text-align: center;
+		margin: 0;
+		padding: 0;
 	}
-	.forecast {
-		display: inline;
-		margin: auto;
-	}
-	.condition, .info, .ws-info {
-		padding: 5px;
-		font-size: 1.125em;
+	.gallery img {
+		box-shadow: none;
+		margin: 25px 0 0 0;
 	}
 
-	map {
-		display: inherit;
+	.figGal {		
+		object-fit: cover;
+		overflow: hidden;
+		border-radius: 5px;
+		margin: 0px;
 	}
-	.park {
-		float: right;
-		margin: 10px;
-	}	
-	.city {
-		font-size: 2.5em;
+	.figGal:hover {
+		box-shadow: 10px 10px 20px gray;
+	}
+	figcaption {
+		font-family: Tahoma;
+		font-size: .9em;
+		margin: 0px 0px;
+		text-align: center;
+		padding: 0 0 5px 0;
 	}
 }
