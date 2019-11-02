@@ -43,43 +43,9 @@
 	.navigation li {
 		display: block;
 	}
-	.condition, .info, .ws-info {
-		padding: 3px;
-		font-size: 1.1em;
-	}
-
-	.ms {
-		font-size: 25px;
-		font-weight: bold;
-	}
-	.mt {
-		font-size: 40px;
-	}
-	footer {
-		min-width: 800px;
-	}
-	.park {
-		float: right;
-		margin: 10px;
-	}
-	.forecast {
-		display: inline;
-		margin: auto;
-	}
-	.map {
-		display: inherit;
-	}
-	.hero {
-		
-		padding: 20px;
-	}
-	.hero {
-		top: 30px;
-		left: 30px;
-	}
-	.city {
-		font-size: 2.2em;
-	}
+	
+	
+	
 	.container, .visuallyHidden, .hamburger {
 		display: none;
 	}
@@ -90,7 +56,6 @@
 		text-align: center;
 		margin: 0;
 		padding: 0;
-
-
 	}
+	
 }
