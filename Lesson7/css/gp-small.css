@@ -115,11 +115,12 @@ li .active {
 }
 .gallery img{
     width: 320px;
-    height: 400px;
+    height: 350px;
     object-fit: cover;
     overflow: hidden;
-    margin: 2px 0px;
+    margin: 0px;
     padding: 0px;
+    border-radius: 5px;
     box-shadow: 5px 5px 10px gray;
 }
 .weatherGal h1{
@@ -129,9 +130,8 @@ li .active {
     color: navy;
 }
 figcaption {
-    font-family: Tahoma;
-    font-size: 1em;
-    margin: 3px 0px 25px;
+    font-family: Tahoma;    
+    margin: 3px 0px 28px;
     text-align: center;
 }
 

@@ -12,7 +12,8 @@ img {
     height: 400px;
     overflow: hidden; 
     object-fit: cover;
-    box-shadow: 5px 5px 10px gray;   
+    box-shadow: 5px 5px 10px gray;
+    border-radius: 8px;   
     
 }
 img[data-src]  {
