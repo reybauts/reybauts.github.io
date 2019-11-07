@@ -102,37 +102,11 @@ nav li:hover {
 li .active {
     display: block;
     color: #202633;
-    font-weight: 800;
+    font-weight: 700;
     background-color: rgb(135, 166, 233);
 }
 .responsive li {
     display: block;
-}
-.gallery {
-    display: block;
-    text-align: center;
-    margin: auto;
-}
-.gallery img{
-    width: 320px;
-    height: 350px;
-    object-fit: cover;
-    overflow: hidden;
-    margin: 0px;
-    padding: 0px;
-    border-radius: 5px;
-    box-shadow: 5px 5px 10px gray;
-}
-.weatherGal h1{
-    text-align: center;
-    font-family: Segoe Ui;
-    text-shadow: 3px 3px 5px gray;
-    color: navy;
-}
-figcaption {
-    font-family: Tahoma;    
-    margin: 3px 0px 35px;
-    text-align: center;
 }
 
 footer p {
@@ -154,63 +128,99 @@ footer #byui {
     text-decoration: none;
 }
 
-stormhead, .stormsubhead {
-    text-align: left;
-    padding: 20px 0;
-    margin: 0 20px;
+
+
+//form{
+    border: 1px solid;
 }
 
-.stormsubhead {
-    padding: 2px 0;
-}
-
-form fieldset {
-    margin: 2rem 0;
-    border: 3px solid #fff3cd;
-    border-radius: 10px;
-    padding: .5rem 2%;
-    max-width: 360px;
-}
-
-form legend {
-    color: #0b4871;
-}
-
-.userinfo, .priority, .storminfo, .slider {
+.stormHead {
+    font-family: "Segoe UI";
+    text-align: center;
+    padding: 0;
+    margin: 20px auto;
+    color: darkblue;
+    text-shadow: 3px 3px 5px gray;
+    font-size: 2.25em;
+  }
+  
+  .storm-subhead {
+    font-family: "Segoe UI";    
+    color: darkred;
+    text-align: center;
+    text-shadow: 1px 2px 5px gray;
+    margin-bottom: 0px;
+  }
+  
+  form fieldset  {
+    margin: 0px 20px 25px 20px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 5px 20px 20px 20px;
+    font-weight: 600;
+    
+ 
+   
+  }
+  
+  form legend {
+    color: black;
+    font-family: "Segoe UI";
+    font-size: 1.25em;
+    
+  
+  }
+  
+  .userInfo, .priority, .stormInfo, .slider {
     display: block;
-    padding-top: 1.2rem;
+    font-family: "Segoe UI";
+    padding-top: 1.25rem;
     color: #0b4871;
-}
-form label.userinfo input, form label.userinfo select, form label.storminfo input, form label.storminfo select {
-    -webkit-appearance: none;
+    
+  }
+  form label.userInfo input, form label.userInfo select, form label.stormInfo input, form label.stormInfo select {    
     display: block;
-    border: solid 2px #a3e1f8;
-    border-radius: 4px;
+    border: solid 1px rgb(17, 75, 129);
+    border-radius: 5px;
     padding: .75rem;
-    color: #07304b;
-    width: 100%;
-    max-width: 20rem;
-    background-color: #fff3cd
-}
-
-
-form input#submitbutton {
+    color: #064b79;
+    width: 96%;  
+    max-width: 50rem;
+    background-color: #e9f1f3
+  }
+  
+  
+  form input#sendButton {
     border: none;
-    background-color: #0b4871;
+    background-color: #096480;
     color: white;
-    border-radius: 1rem;
+    font-family: Segoe UI;
+    font-size: 1.25em;
+    border-radius: 10px;
     padding: .75rem 1.5rem;
     margin: 0 0 2rem 2%;
     width: 100%;
     max-width: 240px;
-}
-
-form label.userinfo input:required {
-    border: #0e6096 dashed 3px;
-}
-
-form label.userinfo input:required:valid {
-    border: #0b4871 solid 3px;
-}
-
-
+  }
+  .input, textarea {
+    display: block;    
+    padding: 10px;
+    border-radius: 5px;
+    border: none;    
+    height: 8rem;
+    resize: vertical;
+    margin-top: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    
+  }
+  
+  form label.userInfo input:required {
+    border: #0e6096 solid 1px;
+  }
+  
+  form label.userInfo input:required:valid {
+    border: #0b4871 solid 1px;
+  }
+  
+  

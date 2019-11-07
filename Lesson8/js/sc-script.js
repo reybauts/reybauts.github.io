@@ -39,3 +39,7 @@ WebFont.load({
       families: ['Droid Sans', 'Droid Serif']
     }
   });
+
+function adjustRating(scale) {
+    document.getElementById("ratingValue").innerHTML = scale;
+}

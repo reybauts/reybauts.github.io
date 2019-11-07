@@ -311,3 +311,12 @@ footer #byui {
 .read {
     color: blue
 }
+
+.thanks {
+    text-align: center;
+    font-family: Segoe UI;
+    color: navy;
+    text-shadow: 2px 2px 5px gray;
+    margin: 40px auto;
+
+}
