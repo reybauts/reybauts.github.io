@@ -16,12 +16,12 @@
     <link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Display:400,500,600,700,800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/gp-small.css">
-    <link rel="stylesheet" href="css/gp-medium.css">
-    <link rel="stylesheet" href="css/gp-large.css">
+    <link rel="stylesheet" href="css/sc-small.css">
+    <link rel="stylesheet" href="css/sc-medium.css">
+    <link rel="stylesheet" href="css/sc-large.css">
     <link rel="shortcut icon" type="image/png" href="images/favicon.ico">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="js/gp-script.js"></script>
+    <script src="js/sc-script.js"></script>
     <script src="js/lazy-script.js" defer></script>
 
 </head>
@@ -49,60 +49,55 @@
         </ul>
     </nav>
     <main>
-        <section class="weatherGal">
-            <h1>Weather Gallery</h1>
-            <div class="gallery">
-                <figure class="figGal">
-                    <img src="images/placeholder.jpg" data-src="images/rainy.jpg" alt="Rainy Day">
-                    <figcaption>A wet and chilly halloween forecast</figcaption>
-                </figure>
-
-                <figure class="figGal">
-                    <img src="images/placeholder.jpg" data-src="images/blizzard.jpg" alt="Blizzard">
-                    <figcaption>Traffic jam due to snowstorm</figcaption>
-                </figure>
-                <figure class="figGal">
-                    <img src="images/placeholder.jpg" data-src="images/perfect-day.jpg" alt="Sunny Day">
-                    <figcaption>A clear and sunny day in Soda Springs</figcaption>
-                </figure>
-                <figure class="figGal">
-                    <img src="images/placeholder.jpg" data-src="images/thunderstorm.jpg" alt="Thunderstorm">
-                    <figcaption>Severe thunderstorm in Fish Haven</figcaption>
-                </figure>
-                <figure class="figGal">
-                    <img src="images/placeholder.jpg" data-src="images/windy.jpg" alt="Windy Weather">
-                    <figcaption>High winds topples trees in Preston</figcaption>
-                </figure>
-                <figure class="figGal">
-                    <img src="images/placeholder.jpg" data-src="images/heatwave.jpg" alt="Heatwave">
-                    <figcaption>Record breaking heat wave in Winder </figcaption>
-                </figure>
-                <figure class="figGal">
-                    <img src="images/placeholder.jpg" data-src="images/wildfire.jpg" alt="Forest Fire">
-                    <figcaption>Wildfire threatens homes in Oxford</figcaption>
-                </figure>
-                <figure class="figGal">
-                    <img src="images/placeholder.jpg" data-src="images/clear.jpg" alt="Beach">
-                    <figcaption>A perfect day at the North Beach</figcaption>
-                </figure>
-                <figure class="figGal">
-                    <img src="images/placeholder.jpg" data-src="images/tornado.jpg" alt="Tornado">
-                    <figcaption>Tornado rips through Dayton </figcaption>
-                </figure>
-                <figure class="figGal">
-                    <img src="images/placeholder.jpg" data-src="images/flooding.jpg" alt="Flash Flood">
-                    <figcaption>Flash flooding due to heavy rain</figcaption>
-                </figure>
-                <figure class="figGal">
-                    <img src="images/placeholder.jpg" data-src="images/cloudy.jpg" alt="Cloudy">
-                    <figcaption>Cool and cloudy weekend in Franklin</figcaption>
-                </figure>
-                <figure class="figGal">
-                    <img src="images/placeholder.jpg" data-src="images/hailstorm.jpg" alt="Hailstorm">
-                    <figcaption>Hailstorm blows through SwanLake</figcaption>
-                </figure>
-            </div>
-        </section>
+        <h2 class="stormhead">Storm Center</h2>
+        <h3 class="stormsubhead">Would you like to report severe weather conditions?</h3><br>
+        <h3 class="stormsubhead">Fill out the form below:</h3>
+        <h6 class="stormsubhead"><em>items marked with a * are required</em></h6>
+        <form method="GET" action="thanks.html" name="stormreport">
+            <fieldset>
+                <legend>Eye Witness Information</legend>
+                <label class="userinfo">Full Name* <input type="text" name="fullname" required pattern="[A-Za-z]{5, }"></label>
+                <label class="userinfo">Email Address <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="report@theweatherwatcher.com"></label>
+                <label class="userinfo">Phone Number* <input type="tel" name="phone" required placeholder="1235556789"></label>
+                <label class="userinfo">Zip Code* <input type="number" name="zip" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Storm Information</legend>
+                <label class="storminfo">Storm Date <input type="date"> </label>
+                <label class="storminfo">Storm Type <input list="types" name="stormtype">
+                    <datalist id="types">
+                        <option value="Flood"></option>
+                        <option value="Hail"></option>
+                        <option value="Hurricane"></option>
+                        <option value="Thunderstorm"></option>
+                        <option value="Tornado"></option>
+                    </datalist>
+                </label>
+                <label class="slider">Storm Severity (1 to 10)                     
+                    <span id="ratingvalue">5</span>
+                    <input type="range" id="scale" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                </label>
+                <label class="storminfo">Storm Region
+                    <select name="region">
+                        <option value="" selected disabled>Select Region...</option>
+                        <option value="preston">Preston</option>
+                        <option value="soda-springs">Soda Springs</option>
+                        <option value="fish-haven">Fish Haven</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Are You In Danger?</legend>
+                <label class="priority"><input type="radio" name="danger" value="yes"> Yes</label>
+                <label class="priority"><input type="radio" name="danger" value="maybe"> Maybe</label>
+                <label class="priority"><input type="radio" name="danger" value="no"> No</label>
+            </fieldset>
+            <fieldset>
+                <legend>Additional Information: </legend>
+                <textarea id="addinfo" cols="40" rows="5"></textarea>
+            </fieldset>
+            <input type="submit" id="submitbutton" value="Send Your Report">
+        </form>
 
 
     </main>
