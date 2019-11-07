@@ -43,3 +43,8 @@ WebFont.load({
 function adjustRating(scale) {
     document.getElementById("ratingValue").innerHTML = scale;
 }
+
+webshims.setOptions('waitReady', false);
+webshims.setOptions('forms-ext', {type: 'date'});
+webshims.setOptions('forms-ext', {type: 'time'});
+webshims.polyfill('forms forms-ext');
