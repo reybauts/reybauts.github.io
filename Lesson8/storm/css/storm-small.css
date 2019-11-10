@@ -31,7 +31,7 @@ header {
     margin: 0;
     padding: 0;
 }
-.wcock {
+.w-cock {
     font-family: 'Big Shoulders Display', cursive;
     color: #dbf3f1;
     font-size: 30px;
@@ -108,6 +108,47 @@ li .active {
 .responsive li {
     display: block;
 }
+.contact {
+    padding: 20px;
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.map {
+    display: none;
+    width: 30%;
+    height: auto;
+    margin-right: 15%;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 5px 5px 15px gray;
+}
+.tw-title {
+    width: 100%;
+    font-size: 1.3rem;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    margin: 0;
+    padding: 5px 0;
+}
+.tw-info>h3 {
+    display: block;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    padding: 8px 0;
+    margin: 0;
+    font-weight: 700;
+}
+.soc-media {
+    margin-top: 10px;
+    padding: 2px;
+    width: 40px;
+    height: auto;
+}
+.read {
+    color: blue
+}
 
 footer p {
     margin: auto;
@@ -123,15 +164,13 @@ footer {
     background-color: #1c1c57;
     padding: 15px 0;
 }
-footer #byui {
+footer #byu-i {
     color: #f5deb3;
     text-decoration: none;
+
+
+
 }
-
-
-
-
-
 .stormHead {
     font-family: "Segoe UI";
     text-align: center;
@@ -141,7 +180,6 @@ footer #byui {
     text-shadow: 3px 3px 5px gray;
     font-size: 2.25em;
   }
-  
   .storm-subhead {
     font-family: "Segoe UI";    
     color: darkred;
@@ -149,57 +187,57 @@ footer #byui {
     text-shadow: 1px 2px 5px gray;
     margin-bottom: 0px;
   }
-  
-  form fieldset  {
-    margin: 0px 20px 25px 20px;
+  fieldset  {    
+    margin: 25px auto;
     border: 1px solid gray;
     border-radius: 5px;
-    padding: 5px 20px 20px 20px;
+    padding: 20px;
     font-weight: 600;
-    
- 
-   
+    max-width: 600px;
   }
+ 
+  form {
+      margin: 0 20px;
+  }  
   
   form legend {
     color: black;
     font-family: "Segoe UI";
     font-size: 1.25em;
-    
-  
   }
-  
   .userInfo, .priority, .stormInfo, .slider {
     display: block;
     font-family: "Segoe UI";
     padding-top: 1.25rem;
     color: #0b4871;
     
+    
   }
   form label.userInfo input, form label.userInfo select, form label.stormInfo input, form label.stormInfo select {    
     display: block;
     border: solid 1px rgb(17, 75, 129);
     border-radius: 5px;
-    padding: .75rem;
-    color: #064b79;
-    width: 96%;  
-    max-width: 50rem;
-    background-color: #e9f1f3;
     
+    padding: 0 10px;
+    width: 95%;
+    height: 45px;
+    color: #064b79;
+    
+    
+    background-color: #e9f1f3;
 }
-  
-  
   form input#sendButton {
+    display: block;
     border: none;
     background-color: #096480;
     color: white;
     font-family: 'Segoe UI';
     font-size: 1.25em;
-    border-radius: 10px;
+    border-radius: 12px;
     padding: .75rem 1.5rem;
-    margin: 0 0 2rem 1rem;
-    width: 100%;
-    max-width: 240px;
+    margin: auto;
+    width: 260px;
+    justify-content: center;
   }
   .input, textarea {
     display: block;    
@@ -211,15 +249,5 @@ footer #byui {
     margin-top: 10px;
     box-sizing: border-box;
     width: 100%;
-    
   }
-  
-  form label.userInfo input:required {
-    border: #0e6096 solid 1px;
-  }
-  
-  form label.userInfo input:required:valid {
-    border: #0b4871 solid 1px;
-  }
-  
   

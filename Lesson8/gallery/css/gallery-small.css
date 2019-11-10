@@ -108,6 +108,46 @@ li .active {
 .responsive li {
     display: block;
 }
+
+.contact {
+    padding: 20px;
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.map {
+    display: none;
+    width: 30%;
+    height: auto;
+    margin-right: 15%;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 5px 5px 15px gray;
+}
+.tw-title {
+    width: 100%;
+    font-size: 1.3rem;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    margin: 0;
+    padding: 5px 0;
+}
+.tw-info>h3 {
+    display: block;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    padding: 8px 0;
+    margin: 0;
+    font-weight: 700;
+}
+.soc-media {
+    margin-top: 10px;
+    padding: 2px;
+    width: 40px;
+    height: auto;
+}
+
 .gallery {
     display: block;
     text-align: center;

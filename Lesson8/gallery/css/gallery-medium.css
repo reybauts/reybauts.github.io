@@ -43,6 +43,9 @@
 	.navigation li {
 		display: block;
 	}
+	.map {
+		display: inherit;
+	}
 	
 	
 	

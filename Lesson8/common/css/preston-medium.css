@@ -1,4 +1,4 @@
-@media only screen and (min-width: 51em) {
+@media only screen and (min-width: 53em) {
 	main,
 	footer {
 		max-width: 800px;
@@ -7,11 +7,11 @@
 	.banner {
 		font-size: 1.25em;
 	}
-	.cock-logo img {
+	img {
 		height: 80px;
 		margin-right: 10px;
 	}
-	.w-cock {
+	.wcock {
 		font-size: 40px;
 		letter-spacing: 1.25px;
 		margin: -3px 0 0 0;
@@ -24,7 +24,7 @@
 	nav li {
 		justify-content: center;
 		margin: auto;
-		width: 42em;
+		width: 45em;
 		padding: 0;
 		display: block;
 	}
@@ -43,38 +43,44 @@
 	.navigation li {
 		display: block;
 	}
+	.condition, .info, .ws-info {
+		padding: 3px;
+		font-size: 1.1em;
+	}
+
+	.ms {
+		font-size: 25px;
+		font-weight: bold;
+	}
+	.mt {
+		font-size: 40px;
+	}
+	footer {
+		min-width: 800px;
+	}
+	.park {
+		float: right;
+		margin: 10px;
+	}
+	.forecast {
+		display: inline;
+		margin: auto;
+	}
 	.map {
 		display: inherit;
 	}
-	
-	
+	.hero {
+		
+		padding: 20px;
+	}
+	.hero {
+		top: 30px;
+		left: 30px;
+	}
+	.city {
+		font-size: 2.2em;
+	}
 	.container, .visuallyHidden, .hamburger {
 		display: none;
 	}
-	.gallery {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		justify-content: center;
-		text-align: center;
-		margin: 0;
-		padding: 0;
-	}
-	figcaption {
-		margin: 0 -10px;
-		padding: 0;
-	}
-	fieldset {
-		margin: 25px 20px;
-		max-width: 800px;
-	}
-	form label.userInfo input, form label.userInfo select, form label.stormInfo input, form label.stormInfo select {   
-    padding: 0 10px;
-    width: 97%;
-    height: 45px;
-    color: #064b79;
-    
-    
-    background-color: #e9f1f3;
-}
-	
 }
