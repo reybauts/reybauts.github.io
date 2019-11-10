@@ -26,7 +26,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://cdn.jsdelivr.net/webshim/1.12.4/extras/modernizr-custom.js"></script>
     <script src="http://cdn.jsdelivr.net/webshim/1.12.4/polyfiller.js"></script>
-
 </head>
 
 <body onload="UpdateDates()">
@@ -101,10 +100,8 @@
                 <label class="priority"><input type="radio" name="danger" value="maybe"> Maybe</label>
             </fieldset>
             <fieldset>
-                <label>
-                    <legend>Additional Information: </legend>
-                    <textarea id="add-info"></textarea>
-                </label>
+                <legend>Additional Information: </legend>
+                <label><textarea id="add-info"></textarea></label>
             </fieldset>
             <input type="submit" id="sendButton" value="Send Report">
         </form>
@@ -128,15 +125,12 @@
                         alt="Whatsapp icon"></a>
             </div>
         </section>
-
-
     </main>
     <footer>
         <p> &copy; <span id="copyrightDate"></span> The Weathercock &#9728; Rey Bautista &#9770; <a id="byu-i"
                 href="https://www.byui.edu/online" target="_blank">BYU-Idaho</a></p>
         <p id="currentDate"></p>
     </footer>
-
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/wind-chill.js"></script>
 </body>
