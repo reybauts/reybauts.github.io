@@ -165,9 +165,11 @@ li .active {
 }
 .weatherGal h1{
     text-align: center;
-    font-family: Segoe Ui;
+    font-family: "Segoe UI";    
     text-shadow: 3px 3px 5px gray;
+    font-size: 2em;
     color: navy;
+    margin: 25px auto 35px;
 }
 figcaption {
     font-family: Tahoma;    

@@ -175,10 +175,10 @@ footer #byu-i {
     font-family: "Segoe UI";
     text-align: center;
     padding: 0;
-    margin: 20px auto;
-    color: darkblue;
+    margin: 25px auto;
+    color: navy;
     text-shadow: 3px 3px 5px gray;
-    font-size: 2.25em;
+    font-size: 2em;
   }
   .storm-subhead {
     font-family: "Segoe UI";    

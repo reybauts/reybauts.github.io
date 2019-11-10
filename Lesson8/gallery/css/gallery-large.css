@@ -33,6 +33,9 @@
 		box-shadow: none;
 		margin: 0;
 	}
+	.weatherGal h1{
+		font-size: 2.5em;
+	}
 
 	.figGal {		
 		object-fit: cover;

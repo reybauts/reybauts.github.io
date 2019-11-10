@@ -47,7 +47,10 @@
 		display: inherit;
 	}
 	
-	
+	.stormHead {
+		font-size: 2.25em;
+	}
+
 	.container, .visuallyHidden, .hamburger {
 		display: none;
 	}
