@@ -48,7 +48,7 @@ h3 {
   top: -350px;
   left: 38px;
   color: white;
-  background-color: rgb(31, 9, 3);
+  background-color: rgb(24, 47, 53);
   opacity: .4;
   width: 40px;  
   border-radius: 50%;
@@ -88,6 +88,7 @@ img {
 
 img:hover {
   box-shadow: 0px 0px 30px white;
+  
 }
 
 
