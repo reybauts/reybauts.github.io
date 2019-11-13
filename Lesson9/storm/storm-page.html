@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>The Weathercock | Storm Center| BYU-I</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Rey Bautista">
+    <meta name="description" content="Week 7-Gallery Page">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,600,600i,700,700i,800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600i,700,700i,800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Display:400,500,600,700,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/storm-small.css">
+    <link rel="stylesheet" href="css/storm-medium.css">
+    <link rel="stylesheet" href="css/storm-large.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/sc-script.js"></script>
+    <script src="js/lazy-script.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/webshim/1.12.4/extras/modernizr-custom.js"></script>
+    <script src="http://cdn.jsdelivr.net/webshim/1.12.4/polyfiller.js"></script>
+</head>
+
+<body onload="UpdateDates()">
+    <div class="pancakeFriday">
+        Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
+    </div>
+    <header>
+        <picture class="cock-logo"><img src="images/cock.png" alt="cock logo"></picture>
+        <section class="headings">
+            <h2 class="w-cock">The Weathercock</h2>
+            <div class="look">Look Before You Lock!</div>
+        </section>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a class="menus" href="#menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="../preston/preston-page.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a class="active">Storm Center</a></li>
+            <li><a href="../gallery/gallery-page.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1 class="stormHead">Storm Center</h1>
+        <h2 class="storm-subhead">Report Severe Weather Condition</h2><br>
+        <form method="GET" action="thanks.html" name="stormReport">
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label class="userInfo">Your Name* <input type="text" name="fullName" required
+                        pattern="[A-Za-z]{5, }"></label>
+                <label class="userInfo">Email Address <input type="email" name="email"
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="username@domain.com"></label>
+                <label class="userInfo">Phone Number* <input type="tel" name="phone" required
+                        placeholder="8883335577"></label>
+                <label class="userInfo">Zip Code* <input type="number" name="zip" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Storm Information</legend>
+                <label class="stormInfo">Storm Date <input type="date" /> </label>
+                <label class="stormInfo">Storm Type <input list="types" name="stormType">
+                    <datalist id="types">
+                        <option value="Thunderstorm"></option>
+                        <option value="Hurricane"></option>
+                        <option value="Blizzard"></option>
+                        <option value="Hailstorm"></option>
+                        <option value="Flood"></option>
+                        <option value="Tornado"></option>
+                        <option value="Wildfire"></option>
+                        <option value=""></option>
+                    </datalist>
+                </label>
+                <label class="slider">Storm Severity (1 to 10)
+                    <span id="ratingValue"></span>
+                    <input type="range" id="scale" min="1" max="10" step="1" value="5"
+                        oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                </label>
+                <label class="stormInfo">Storm Region
+                    <select name="region">
+                        <option value="" selected disabled>Select Region...</option>
+                        <option value="preston">Preston</option>
+                        <option value="soda-springs">Soda Springs</option>
+                        <option value="fish-haven">Fish Haven</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Are You In Danger?</legend>
+                <label class="priority"><input type="radio" name="danger" value="yes"> Yes</label>
+                <label class="priority"><input type="radio" name="danger" value="no"> No</label>
+                <label class="priority"><input type="radio" name="danger" value="maybe"> Maybe</label>
+            </fieldset>
+            <fieldset>
+                <legend>Additional Information: </legend>
+                <label><textarea id="add-info"></textarea></label>
+            </fieldset>
+            <input type="submit" id="sendButton" value="Send Report">
+        </form>
+        <section class="contact">
+            <img class="map" src="images/preston-map.jpg" alt="Preston Map">
+            <div class="tw-info">
+                <h2 class="tw-title">&nbsp;&nbsp;&nbsp;&nbsp;The Weathercock</h2>
+                <h3>&nbsp;&#128205; &nbsp;300 S State St. </h3>
+                <h3>&nbsp; &nbsp; &nbsp; Preston, Idaho 83263</h3>
+                <h3>&#128222; 1-800-626-COCK</h3>
+                <h3>&#128231; info@weathercock.com</h3>
+                <a href="https://www.facebook.com/" target="_blank"><img class="soc-media" src="images/fb-icon.png"
+                        alt="Facebook icon"></a>
+                <a href="https://twitter.com/" target="_blank"><img class="soc-media" src="images/tweet-icon.png"
+                        alt="Tweeter icon"></a>
+                <a href="https://www.pinterest.com/" target="_blank"><img class="soc-media" src="images/pint-icon.png"
+                        alt="Pinterest icon"></a>
+                <a href="https://www.instagram.com//" target="_blank"><img class="soc-media" src="images/insta-icon.png"
+                        alt="Instagram icon"></a>
+                <a href="https://web.whatsapp.com/" target="_blank"><img class="soc-media" src="images/whats-icon.png"
+                        alt="Whatsapp icon"></a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p> &copy; <span id="copyrightDate"></span> The Weathercock &#9728; Rey Bautista &#9770; <a id="byu-i"
+                href="https://www.byui.edu/online" target="_blank">BYU-Idaho</a></p>
+        <p id="currentDate"></p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/wind-chill.js"></script>
+</body>
+
+</html>
