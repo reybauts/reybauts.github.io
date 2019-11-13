@@ -26,7 +26,7 @@ footer {
 h1 {
   font-family: 'Segoe UI';
   text-align: center;
-  color: rgb(5, 46, 65);
+  color: rgb(5, 50, 71);
   text-shadow: 3px 3px 5px gray;
   font-size: 2rem;
 
@@ -36,22 +36,21 @@ h2 {
   font-family: 'Segoe UI';
   font-size: 1.25em;
   text-align: center;
-  margin-top: -100px;
+  
   margin-bottom: 8px;
   color: white;
 
 }
 h3 {
-  font-family: 'Trebuchet MS';
-  font-size: 2em;
+  font-family: 'Arial Narrow';
+  font-size: 1.5em;
   position: relative;  
-  top: -440px;
+  top: -350px;
   left: 38px;
   color: white;
-  background-color: rgb(3, 28, 32);
+  background-color: rgb(31, 9, 3);
   opacity: .4;
-  width: 45px;
-  height:40px;
+  width: 40px;  
   border-radius: 50%;
   
   
@@ -64,17 +63,17 @@ p {
   margin: 0;
   color: rgb(240, 213, 171);
   margin: 0px;
-  font-size: 1.25em;
+  
 }
 
 img {  
-  margin: 30px auto 15px;
+  margin: 30px auto -70px;
   width: 300px;
   height: 400px;
   overflow: hidden;
   object-fit: cover;
   border-radius: 5px;
-  box-shadow: 0px 0px 15px wheat;
+  border: 2px solid rgb(84, 97, 94);
 }
 
 .cards {
