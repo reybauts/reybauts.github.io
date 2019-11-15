@@ -137,13 +137,13 @@ li .active {
 }
 
 .map {
-    display: none;
-    width: 30%;
-    height: auto;
-    margin-right: 15%;
+    display: none;        
+    height: 240px;
+    width: 350px;
+    margin-right: 60px;
     justify-content: center;
     text-align: center;
-    box-shadow: 5px 5px 15px gray;
+    box-shadow: 10px 10px 15px gray;
 }
 
 .tw-title {
@@ -221,14 +221,18 @@ div.townDetail {
 }
 
 section.townDetail-section {
-    width: 350px;
+    width: 320px;
     color: #00303F;
-    align-items: center;
+    align-content: center;
     margin: 20px auto;
-    padding: 30px;
+    padding: 0 25px 25px;
     background-color: rgb(190, 216, 233);
-    box-shadow: 6px 6px 10px rgb(165, 177, 187);
+    box-shadow: 10px 10px 10px rgb(165, 177, 187);
     text-align: center;
+}
+.townDetail-section h4 {
+    width: 280px;
+    margin: auto;		
 }
 
 .townDetail-section img {
@@ -237,4 +241,5 @@ section.townDetail-section {
     overflow: hidden;
     object-fit: cover;
     box-shadow: 5px 5px 10px rgb(106, 126, 122);
+    
 }

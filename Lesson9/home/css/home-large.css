@@ -59,7 +59,7 @@
     }
     section.townDetail-section {
 		width: 350px;
-        margin: 0 20px;
+        margin: 0 20px 25px 20px;
         display: flex;
         flex-direction: column;      
         
