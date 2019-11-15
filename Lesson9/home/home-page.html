@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>The Weathercock | Home Page | BYU-I</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Rey Bautista">
+    <meta name="description" content="Week 9-Home Page">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,600,600i,700,700i,800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600i,700,700i,800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Display:400,500,600,700,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/home-small.css">
+    <link rel="stylesheet" href="css/home-medium.css">
+    <link rel="stylesheet" href="css/home-large.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/gallery-script.js"></script>
+    <script src="js/lazy-script.js" defer></script>
+
+</head>
+
+<body onload="UpdateDates()">
+    <div class="pancakeFriday">
+        Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
+    </div>
+    <header>
+        <picture class="cock-logo"><img src="images/cock.png" alt="cock logo"></picture>
+        <section class="headings">
+            <h1 class="wcock">The Weathercock</h1>
+            <div class="look">Look Before You Lock!</div>
+        </section>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a class="menus" href="#menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a class="active">Home</a></li>
+            <li><a href="../preston/preston-page.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="../storm/storm-page.html">Storm Center</a></li>
+            <li><a href="../gallery/gallery-page.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+            <h1 class="snapshot">Town Snapshots</h1>
+            <div class="townDetail"></div>
+        
+
+
+    </main>
+    <footer>
+        <p> &copy; <span id="copyrightDate"></span> The Weathercock &#9728; Rey Bautista &#9770; <a id="byui"
+                href="https://www.byui.edu/online" target="_blank">BYU-Idaho</a></p>
+        <p id="currentDate"></p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/towns.js"></script>
+</body>
+
+</html>
