@@ -232,7 +232,12 @@ section.townDetail-section {
 }
 .townDetail-section h4 {
     width: 280px;
-    margin: auto;		
+    margin: auto;
+    color:navy;
+    font-style: italic;		
+}
+.townDetail-section p {
+    font-weight: 600;
 }
 
 .townDetail-section img {
