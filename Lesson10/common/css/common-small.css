@@ -109,10 +109,12 @@ li .active {
     display: block;
 }
 .city {
-    font-size: 2em;
+    font-size: 1.75rem;
     text-align: center;
-    margin: 25px auto 35px;    
-    font-family: "Segoe UI";    
+    margin: 0 0 20px 0;
+    padding-top: 20px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 800;
     letter-spacing: 1px;
     text-shadow: 3px 3px 5px gray;
     color: rgb(6, 34, 126);
@@ -156,8 +158,8 @@ footer #byui {
 .hero {
     font-family: 'Nunito Sans', sans-serif;
     padding: 10px;    
-    background-color: #040935;
-    opacity: .65;
+    background-color: black;
+    opacity: .7;
 }
 
 
@@ -277,9 +279,9 @@ footer #byui {
 }
 .map {
     display: none;
-    height: 240px;
-    width: 350px;
-    margin-right: 60px;
+    width: 30%;
+    height: auto;
+    margin-right: 15%;
     justify-content: center;
     text-align: center;
     box-shadow: 5px 5px 15px gray;

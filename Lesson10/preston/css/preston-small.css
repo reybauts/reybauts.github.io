@@ -151,7 +151,7 @@ footer #byui {
     width: 100%;
     height: auto;
     z-index: -1;
-    box-shadow: 5px 5px 15px gray;    
+    box-shadow: 10px 10px 15px gray;    
 }
 .hero {
     font-family: 'Nunito Sans', sans-serif;
@@ -171,14 +171,16 @@ footer #byui {
     font-weight: 700;
 }    
 
-.ws-info {
+.ws-info th {
     color: skyblue;
     position: relative;
     text-align: center;
-    font-size: 1.125rem;    
+    font-size: 1.175em;    
     padding: 0;
+    margin: 0;   
+}
+hr {
     margin: 0;
-    
 }
 
 .forecast {
@@ -188,10 +190,10 @@ footer #byui {
 }
 #forecast-header {
     text-align: center;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Segoe UI';
     font-weight: 700;
     margin-bottom: 10px;
-    font-size: 1.8em;
+    font-size: 2em;
     text-shadow: 3px 3px 5px gray;
 }
 .forecast-block {
@@ -199,29 +201,36 @@ footer #byui {
     flex-direction: row;
     width: 70%;
     margin: auto;
-    box-shadow: 5px 5px 15px gray;
+    box-shadow: 8px 8px 10px gray;
+    justify-content: space-evenly;
+    background-color: #0C3B58;
+    text-align: center;
 }
 .weekday {
     flex: 1 1 100%;
     background-color: rgb(12, 59, 88);
-    font-size: 16px;
-    text-align: center;
+    font-size: 16px;   
     padding: 5px;
 }
-.day {
+.days {
     display: block;
-    padding: 6px;
+    padding: 6px 25px;
     margin-bottom: 10px;
-    font-weight: 600;
-    font-size: 1.5em;
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 1.25em;
     letter-spacing: 2px;
     background-color: rgb(36, 109, 143);
     color: wheat;
     font-family: 'Roboto', sans-serif;
+    
 }
-.d-icon {
-    width: 50%;
-    height: auto;
+.icon {
+    width: 80px;
+    height: auto;    
+    margin: -15px 0px;
+    
+    
 }
 .data {
     display: block;
@@ -229,6 +238,8 @@ footer #byui {
     color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 1.25em;
+    justify-content: space-evenly;
+    
 }
 .article {
     padding: 20px;
