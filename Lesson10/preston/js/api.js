@@ -21,17 +21,17 @@ fetch(forecastURL)
   .then((response) => response.json())
   .then((forecastObject) => {
     console.log(forecastObject);
-d = 1;
+    d = 1;
     for (let i = 1; i < forecastObject.list.length; i++) {
     if (forecastObject.list[i].dt_txt.includes("18:00:00")) {
         let td = forecastObject.list[i].dt;
         let date = new Date(td * 1000);
-        let weekDays = ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'];
+        let weekDays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
         let dayOfWeek = weekDays[date.getDay()];
-        document.getElementById('day' + d).textContent = dayOfWeek; 
-        document.getElementById('tempF' + d).textContent = Math.round(forecastObject.list[i].main.temp_max) + "° F";
+        document.getElementById('day' + d).textContent = dayOfWeek;        
         document.getElementById('icon' + d).setAttribute('src', 'https://openweathermap.org/img/w/' + forecastObject.list[i].weather[0].icon + '.png'); 
         document.getElementById('icon' + d).setAttribute('alt', forecastObject.list[i].weather[0].description);
+        document.getElementById('tempF' + d).textContent = Math.round(forecastObject.list[i].main.temp_max) + "° F";
         d++;
     }
 }
