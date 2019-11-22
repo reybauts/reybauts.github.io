@@ -328,5 +328,12 @@ hr {
     color: navy;
     text-shadow: 2px 2px 5px gray;
     margin: 40px auto;
-
+}
+img[data-src]  {
+    filter: blur(0.4em);
+}
+  
+img {
+    filter: blur(0em);
+    transition: filter 2s;
 }
