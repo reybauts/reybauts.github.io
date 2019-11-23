@@ -4,16 +4,16 @@ fetch(apiURL)
   .then((weatherObject) => {
     console.log(weatherObject);
     document.getElementById('currently').textContent = weatherObject.weather[0].description;
-    document.getElementById('tempF').textContent = weatherObject.main.temp.toFixed(1) + "° F";
+    document.getElementById('tempF').textContent = Math.round(weatherObject.main.temp) + "° F";
     document.getElementById('humidity').textContent = weatherObject.main.humidity + "%";
-    document.getElementById('windSpeed').textContent = weatherObject.wind.speed .toFixed(1)+ " mph";
+    document.getElementById('windSpeed').textContent = Math.round(weatherObject.wind.speed)+ " mph";
 var tempF = weatherObject.main.temp;
 var windSpeed = weatherObject.wind.speed;
 if (tempF > 50 && windSpeed < 3)    {
   document.getElementById("wChill").innerHTML = "N/A";
 } else {
   var windChill = 35.74 + (0.6215 * tempF) - (35.75 * Math.pow(windSpeed, 0.16)) + (0.4275 * tempF * Math.pow(windSpeed, 0.16));
-  document.getElementById("wChill").innerHTML = windChill.toFixed(1) + "° F";
+  document.getElementById("wChill").innerHTML = Math.round(windChill) + "° F";
 }    
 });
 const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&APPID=f69138eabaf7b974bb7452d338551399&units=imperial";
