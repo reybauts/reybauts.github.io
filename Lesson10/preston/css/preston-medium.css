@@ -84,4 +84,13 @@
 	.container, .visuallyHidden, .hamburger {
 		display: none;
 	}
+	.event-image {  
+		width: 400px;
+		height: auto;
+	}
+	.eventHead {
+		font-size: 2.25em;
+	}
+	.events p {
+		font-size: 1.3em;
 }

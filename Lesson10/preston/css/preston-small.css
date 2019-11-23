@@ -337,3 +337,34 @@ img {
     filter: blur(0em);
     transition: filter 2s;
 }
+.eventHead {
+    margin: 20px;
+    font-size: 2em;
+    text-shadow: 2px 2px 5px gray;
+}
+.events {
+    width: 70%;
+    min-width: 300px;
+    text-align: center;    
+    margin: auto;
+    font-family: Segoe UI;
+    padding: 10px;    
+    background-color: rgb(224, 231, 243);
+}
+.event-image {    
+    position: relative;     
+    width: 300px;
+    height: auto;
+    justify-items: center;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 8px 8px 15px gray;
+    margin: 10px auto;
+    
+}
+.events p {
+    font-size: 1.1em;
+    line-height: .7em;
+    font-weight: 700;
+    color: navy;
+}
