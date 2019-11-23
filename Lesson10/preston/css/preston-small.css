@@ -324,7 +324,7 @@ hr {
 
 .thanks {
     text-align: center;
-    font-family: Segoe UI;
+    font-family: 'Segoe UI';
     color: navy;
     text-shadow: 2px 2px 5px gray;
     margin: 40px auto;
@@ -351,13 +351,13 @@ img {
     min-width: 300px;
     text-align: center;    
     margin: auto;
-    font-family: Segoe UI;
+    font-family: 'Segoe UI';
     padding: 10px;    
     background-color: rgb(224, 231, 243);
 }
 .event-image {    
     position: relative;     
-    width: 60%;
+    width: 50%;
     height: auto;
     justify-items: center;
     text-align: center;
@@ -367,8 +367,9 @@ img {
     
 }
 .events p {
-    font-size: 1.1em;
+    font-size: 1.em;
     line-height: .7em;
     font-weight: 700;
     color: navy;
+    padding: 0 10px;
 }
