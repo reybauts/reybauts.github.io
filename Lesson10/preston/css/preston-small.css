@@ -337,13 +337,17 @@ img {
     filter: blur(0em);
     transition: filter 2s;
 }
+.open {
+    color: cyan;
+    text-decoration: none;
+}
 .eventHead {
     margin: 20px;
-    font-size: 2em;
+    font-size: 1.8em;
     text-shadow: 2px 2px 5px gray;
 }
 .events {
-    width: 70%;
+    width: 80%;
     min-width: 300px;
     text-align: center;    
     margin: auto;
@@ -353,7 +357,7 @@ img {
 }
 .event-image {    
     position: relative;     
-    width: 300px;
+    width: 60%;
     height: auto;
     justify-items: center;
     text-align: center;
