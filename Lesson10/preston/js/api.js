@@ -22,7 +22,7 @@ fetch(forecastURL)
   .then((forecastObject) => {
     console.log(forecastObject);
     d = 1;
-    for (let i = 1; i < forecastObject.list.length; i++) {
+    for (let i = 0; i < forecastObject.list.length; i++) {
     if (forecastObject.list[i].dt_txt.includes("18:00:00")) {
         let td = forecastObject.list[i].dt;
         let date = new Date(td * 1000);
