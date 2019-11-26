@@ -84,6 +84,9 @@
 	.container, .visuallyHidden, .hamburger {
 		display: none;
 	}
+	.events {
+		width: 70%;
+	}
 	.event-image {  
 		width: 400px;
 		height: auto;
@@ -92,6 +95,6 @@
 		font-size: 2.25em;
 	}
 	.events p {
-		font-size: 1.3em;
+		font-size: 1.25em;
 	}
 }
