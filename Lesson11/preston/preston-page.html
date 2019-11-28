@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <title>The Weathercock | Preston Idaho | BYU-I</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Rey Bautista">
+    <meta name="description" content="Preston Page">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,600,600i,700,700i,800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600i,700,700i,800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Display:400,500,600,700,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/preston-small.css">
+    <link rel="stylesheet" href="css/preston-medium.css">
+    <link rel="stylesheet" href="css/preston-large.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/preston-script.js"></script>
+    <script src="js/lazy-script.js" defer></script>
+    
+</head>
+<body onload="UpdateDates()">
+    <div class="pancakeFriday">
+        Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
+    </div>
+    <header>
+        <picture><img src="images/cock.png" alt="cock logo"></picture>
+        <section class="headings">
+            <h1 class="wcock">The Weathercock</h1>
+            <div class="look">Look Before You Lock!</div>
+        </section>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a class="menus" href="#menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="../home/home-page.html">Home</a></li>
+            <li><a class="active">Preston</a></li>
+            <li><a href="../soda-springs/soda-springs.html">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="../storm/storm-page.html">Storm Center</a></li>
+            <li><a href="../gallery/gallery-page.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2 class="city">Preston, Idaho</h2>
+        <div class="hero-ws">
+            
+            <picture>
+                
+                <source srcset="images/preston-small.jpg" media="(max-width:650px)" >
+                <source srcset="images/preston-medium.jpg" media="(max-width:1023px)">
+                <img class="preston-img" src="images/placeholder.jpg" data-src="images/preston-large.jpg" alt="Preston image">                
+            </picture>            
+            <table class ="hero">
+                <tr class="ws-info"><th colspan="2">Weather Summary<hr></th></tr>
+                
+                <tr>
+                    <td class="condition">Currently:</td>
+                    <td class="info"><span id="currently"></span></td>            
+                </tr>
+                <tr>
+                    <td class="condition">High:</td>
+                    <td class="info"><span id="tempF"></span></td>            
+                </tr>
+                <tr>
+                    <td class="condition" >Wind Chill:</td>
+                    <td class="info" ><span id="wChill"></span></td>            
+                </tr>
+                <tr>
+                    <td class="condition">Humidity:</td>
+                    <td class="info"><span id="humidity"></span></td>            
+                </tr>
+                <tr>
+                    <td class="condition" >Wind Speed:</td>
+                    <td class="info"> <span id="windSpeed"></span></td>            
+                </tr>
+            </table>
+        </div>
+        <section class="forecast">
+            <h3 id="forecast-header">5-Day Forecast</h3>
+            <div class="forecast-block">
+                <div class="day1">
+                    <span class="days" id="day1"></span>
+                    <img class="icon" id="icon1" src="#" alt="Weather Condition">
+                    <span class="data" id="tempF1"></span>
+                </div>
+                <div class="day2">
+                    <span class="days" id="day2"></span>
+                    <img class="icon" id="icon2" src="#" alt="Weather Condition">
+                    <span class="data" id="tempF2"></span>
+                </div>
+                <div class="day3">
+                    <span class="days" id="day3"></span>
+                    <img class="icon" id="icon3" src="#" alt="Weather Condition">
+                    <span class="data" id="tempF3"></span>
+                </div>
+                <div class="day4">
+                    <span class="days" id="day4"></span>
+                    <img class="icon" id="icon4" src="#" alt="Weather Condition">
+                    <span class="data" id="tempF4"></span>
+                </div>
+                <div class="day5">
+                    <span class="days" id="day5"></span>
+                    <img class="icon" id="icon5" src="#" alt="Weather Condition">
+                    <span class="data" id="tempF5"></span>
+                </div>
+            </div>
+        </section>
+        <section class="article">
+            <img class="park" src="images/placeholder.jpg" data-src="images/preston-article.jpg" alt="Park image">
+            <h2 class="article-header">How To Prep Your Car For The Winter</h2>
+            <h3 class="article-author">by Ally Hirschlag</h3>
+            <p>Driving during or right after a winter storm can be challenging on many levels. Your tires can slip, ice and snow can get lodged in your windshield wipers rendering them virtually useless, and poor visibility can lead to you getting trapped in a snowbank — just to name a few un-fun possibilities. </p>
+            <p>The best way to mitigate what winter weather can do to your vehicle is to get ahead of it before that weather hits. You can easily do this prep in a day, and once it's done, you'll have the peace of mind that your car is as safe and ready as it can be for those cold, snowy, icy months to come. </p>
+            <p>If it's about time for your car's regular maintenance, take it in before winter weather hits to make sure everything under the hood is operating at tip top levels. That means getting brakes and hoses checked and all liquids changed/topped off, especially your coolant. During extreme cold, coolant (antifreeze) can generate an electrical current, which can actually do damage to your coolant system overtime. To avoid having to get that fixed or replaced down the line, best to get it flushed out now and replaced with fresh coolant (or rather a 50/50 coolant/water ratio). <a class="read" href="https://weather.com/safety/winter/news/2019-10-28-how-prep-your-car-winter#/1" target="_blank"> read the full article</a></p>          
+        </section>
+        <section class="events">
+            <h3 class="eventHead">Events Calendar</h3>            
+            <img class="event-image" src="images/placeholder.jpg" data-src="images/parade.jpg" alt="Preston Map">
+            <div class="event"></div>
+        </section>
+        <section class="contact">
+            <img class="map" src="images/placeholder.jpg" data-src="images/preston-map.jpg" alt="Preston Map">
+            <div class="tw-info">
+                <h2 class="tw-title">&nbsp;&nbsp;&nbsp;&nbsp;The Weathercock</h2>
+                <h3>&nbsp;&#128205; &nbsp;300 S State St. </h3>
+                <h3>&nbsp; &nbsp; &nbsp; Preston, Idaho 83263</h3>
+                <h3>&#128222; 1-800-626-COCK</h3>
+                <h3>&#128231; info@weathercock.com</h3>
+                <a href="https://www.facebook.com/" target="_blank"><img class="soc-media" src="images/fb-icon.png"
+                        alt="Facebook icon"></a>
+                <a href="https://twitter.com/" target="_blank"><img class="soc-media" src="images/tweet-icon.png"
+                        alt="Tweeter icon"></a>
+                <a href="https://www.pinterest.com/" target="_blank"><img class="soc-media" src="images/pint-icon.png"
+                        alt="Pinterest icon"></a>
+                <a href="https://www.instagram.com//" target="_blank"><img class="soc-media" src="images/insta-icon.png"
+                        alt="Instagram icon"></a>
+               
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p> &copy; <span id="copyrightDate"></span> The Weathercock &#9728; Rey Bautista &#9770; <a id="byui"
+                href="https://www.byui.edu/online" target="_blank">BYU-Idaho</a></p>
+        <p id="currentDate"></p>
+        <p>weather info courtesy of <a class="open" href="https://openweathermap.org/"  target="_blank">OpenWeather</a></p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/events.js"></script>
+</body>
+</html>

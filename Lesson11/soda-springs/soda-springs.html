@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <title>The Weathercock | Soda Springs | BYU-I</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Rey Bautista">
+    <meta name="description" content="Soda Springs Page">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,600,600i,700,700i,800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600i,700,700i,800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Display:400,500,600,700,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/sodaspring-small.css">
+    <link rel="stylesheet" href="css/sodaspring-medium.css">
+    <link rel="stylesheet" href="css/sodaspring-large.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/image-script.js"></script>
+    <script src="js/lazy-script.js" defer></script>
+    
+</head>
+<body onload="UpdateDates()">
+    <div class="pancakeFriday">
+        Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
+    </div>
+    <header>
+        <picture><img src="images/cock.png" alt="cock logo"></picture>
+        <section class="headings">
+            <h1 class="wcock">The Weathercock</h1>
+            <div class="look">Look Before You Lock!</div>
+        </section>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a class="menus" href="#menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="../home/home-page.html">Home</a></li>
+            <li><a href="../preston/preston-page.html">Preston</a></li>
+            <li><a class="active">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="../storm/storm-page.html">Storm Center</a></li>
+            <li><a href="../gallery/gallery-page.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2 class="city">Soda Springs, Idaho</h2>
+        <div class="hero-ws">
+            
+            <picture>
+                
+                <source srcset="images/sodaspring-small.jpg" media="(max-width:650px)" >
+                <source srcset="images/sodaspring-medium.jpg" media="(max-width:1023px)">
+                <img class="preston-img" src="images/placeholder.jpg" data-src="images/sodaspring-large.jpg" alt="Preston image">                
+            </picture>            
+            <table class ="hero">
+                <tr class="ws-info"><th colspan="2">Weather Summary<hr></th></tr>
+                
+                <tr>
+                    <td class="condition">Currently:</td>
+                    <td class="info"><span id="currently"></span></td>            
+                </tr>
+                <tr>
+                    <td class="condition">High:</td>
+                    <td class="info"><span id="tempF"></span></td>            
+                </tr>
+                <tr>
+                    <td class="condition" >Wind Chill:</td>
+                    <td class="info" ><span id="wChill"></span></td>            
+                </tr>
+                <tr>
+                    <td class="condition">Humidity:</td>
+                    <td class="info"><span id="humidity"></span></td>            
+                </tr>
+                <tr>
+                    <td class="condition" >Wind Speed:</td>
+                    <td class="info"> <span id="windSpeed"></span></td>            
+                </tr>
+            </table>
+        </div>
+        <section class="forecast">
+            <h3 id="forecast-header">5-Day Forecast</h3>
+            <div class="forecast-block">
+                <div class="day1">
+                    <span class="days" id="day1"></span>
+                    <img class="icon" id="icon1" src="#" alt="Weather Condition">
+                    <span class="data" id="tempF1"></span>
+                </div>
+                <div class="day2">
+                    <span class="days" id="day2"></span>
+                    <img class="icon" id="icon2" src="#" alt="Weather Condition">
+                    <span class="data" id="tempF2"></span>
+                </div>
+                <div class="day3">
+                    <span class="days" id="day3"></span>
+                    <img class="icon" id="icon3" src="#" alt="Weather Condition">
+                    <span class="data" id="tempF3"></span>
+                </div>
+                <div class="day4">
+                    <span class="days" id="day4"></span>
+                    <img class="icon" id="icon4" src="#" alt="Weather Condition">
+                    <span class="data" id="tempF4"></span>
+                </div>
+                <div class="day5">
+                    <span class="days" id="day5"></span>
+                    <img class="icon" id="icon5" src="#" alt="Weather Condition">
+                    <span class="data" id="tempF5"></span>
+                </div>
+            </div>
+        </section>
+        <section class="article">
+            <img class="park" src="images/placeholder.jpg" data-src="images/soda-article.jpg" alt="Park image">
+            <h2 class="article-header">Winter Weather Advisories Declared For East Idaho</h2>
+            <h3 class="article-author">By Jeff Papworth</h3>
+            <p>The first of two forecasted snowstorms entered East Idaho on Wednesday morning and is continuing to bring precipitation to the region during one of the biggest travel weeks of the year, according to the National Weather Service.</p>
+            <p>After the current storm exits the area Thursday morning, another storm will bring widespread snow Friday. Authorities are urging the public to use extreme caution while driving for the Thanksgiving holiday. Winter storm warnings calling for a foot or more of snow from the first storm were declared for much of East Idaho, including the Arco, Spencer, Dubois, Island Park, Preston, Malad, Rockland, Malta, Holbrook, Thatcher and Montpelier areas. </p>
+            <p>The rest of East Idaho including the Pocatello, American Falls, Aberdeen, Burley, Blackfoot, Fort Hall, Idaho Falls, St. Anthony, Ashton, Driggs, Victor, Palisades, Soda Springs, Lava Hot Springs, Rigby and Rexburg areas are under winter weather advisories.The weather service is reporting that the central Idaho mountains are getting hit the hardest. Sun Valley has tallied 18 inches of snow and Hailey has 16 for Wednesday's storm.<a class="read" href="https://www.idahostatejournal.com/pocatello/winter-storm-warnings-winter-weather-advisories-declared-for-east-idaho/article_dcaf7b65-4e1f-52fa-91b5-0028a5a0a31e.html" target="_blank"> read the full article</a></p>          
+        </section>
+        <section class="events">
+            <h3 class="eventHead">Events Calendar</h3>            
+            <img class="event-image" src="images/placeholder.jpg" data-src="images/soda-events.jpg" alt="Preston Map">
+            <div class="event"></div>
+        </section>
+        <section class="contact">
+            <img class="map" src="images/placeholder.jpg" data-src="images/preston-map.jpg" alt="Preston Map">
+            <div class="tw-info">
+                <h2 class="tw-title">&nbsp;&nbsp;&nbsp;&nbsp;The Weathercock</h2>
+                <h3>&nbsp;&#128205; &nbsp;300 S State St. </h3>
+                <h3>&nbsp; &nbsp; &nbsp; Preston, Idaho 83263</h3>
+                <h3>&#128222; 1-800-626-COCK</h3>
+                <h3>&#128231; info@weathercock.com</h3>
+                <a href="https://www.facebook.com/" target="_blank"><img class="soc-media" src="images/fb-icon.png"
+                        alt="Facebook icon"></a>
+                <a href="https://twitter.com/" target="_blank"><img class="soc-media" src="images/tweet-icon.png"
+                        alt="Tweeter icon"></a>
+                <a href="https://www.pinterest.com/" target="_blank"><img class="soc-media" src="images/pint-icon.png"
+                        alt="Pinterest icon"></a>
+                <a href="https://www.instagram.com//" target="_blank"><img class="soc-media" src="images/insta-icon.png"
+                        alt="Instagram icon"></a>
+               
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p> &copy; <span id="copyrightDate"></span> The Weathercock &#9728; Rey Bautista &#9770; <a id="byui"
+                href="https://www.byui.edu/online" target="_blank">BYU-Idaho</a></p>
+        <p id="currentDate"></p>
+        <p>weather info courtesy of <a class="open" href="https://openweathermap.org/"  target="_blank">OpenWeather</a></p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/events.js"></script>
+</body>
+</html>
