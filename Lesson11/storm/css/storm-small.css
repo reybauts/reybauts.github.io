@@ -102,7 +102,7 @@ nav li:hover {
 li .active {
     display: block;
     color: #202633;
-    font-weight: 700;
+    font-weight: 600;
     background-color: rgb(135, 166, 233);
 }
 .responsive li {

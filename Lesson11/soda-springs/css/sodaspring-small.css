@@ -319,7 +319,9 @@ hr {
     height: auto;
 }
 .read {
-    color: blue
+    color: navy;
+    text-decoration: none;
+    font-style: italic;    
 }
 
 .thanks {
