@@ -1,8 +1,8 @@
 body {
     padding: 0;
-    margin: 0;
+    margin: 0;   
+   
 }
-
 .pancakeFriday {
     text-align: center;
     font-size: 1.15em;
@@ -10,34 +10,29 @@ body {
     background-color: rgb(247, 244, 70);
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 700;
-    display: none;
-}
-
+    display:none;
+  }
 header {
     background-color: #1c1c57;
     padding: 20px 0;
     display: flex;
     justify-content: center;
 }
-
 .menus {
     font-size: 1.25em;
 }
-
-.cock-logo img {
+img {
     height: 60px;
     width: auto;
     margin-right: 8px;
 }
-
 .headings {
     display: flex;
     flex-direction: column;
     margin: 0;
     padding: 0;
 }
-
-.w-cock {
+.wcock {
     font-family: 'Big Shoulders Display', cursive;
     color: #dbf3f1;
     font-size: 30px;
@@ -45,7 +40,6 @@ header {
     letter-spacing: 1px;
     font-weight: 800;
 }
-
 .look {
     margin: 0;
     font-family: 'Big Shoulders Display', cursive;
@@ -55,20 +49,17 @@ header {
     font-weight: 700;
     letter-spacing: 1px;
 }
-
 nav {
     background: rgb(73, 167, 229);
     background: linear-gradient(to bottom, rgba(73, 167, 229, 1) 0%, rgba(20, 22, 147, 1) 100%);
     text-align: center;
 }
-
 nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
     overflow: hidden;
 }
-
 nav li a {
     font-family: 'Nunito Sans', sans-serif;
     display: block;
@@ -76,32 +67,26 @@ nav li a {
     color: beige;
     text-align: center;
 }
-
 nav li:hover {
     background-color: #93aacc;
     color: #36454f;
     height: 100%;
 }
-
 .navigation {
     list-style: none;
     text-align: center;
     padding: 0;
     overflow: hidden;
 }
-
 .navigation li:first-child {
     display: block;
 }
-
 .navigation li:first-child a {
     color: white;
 }
-
 .navigation li {
     display: none;
 }
-
 .navigation a {
     display: block;
     color: white;
@@ -110,33 +95,161 @@ nav li:hover {
     text-decoration: none;
     font-size: 1.25em;
 }
-
 .navigation a:hover {
     color: #000;
     background-color: #93aacc;
     font-weight: 700;
 }
-
 li .active {
     display: block;
     color: #202633;
     font-weight: 600;
     background-color: rgb(135, 166, 233);
 }
-
 .responsive li {
     display: block;
 }
+.city {
+    font-size: 2em;
+    text-align: center;
+    margin: 25px auto 35px;    
+    font-family: "Segoe UI";    
+    letter-spacing: 1px;
+    text-shadow: 3px 3px 5px gray;
+    color: rgb(6, 34, 126);
+}
+footer p {
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+    text-align: center;
+}
+footer {
+    position: relative;
+    margin: auto;
+    margin-top: 20px;
+    color: white;
+    background-color: #1c1c57;
+    padding: 15px 0;
+}
+footer #byui {
+    color: #f5deb3;
+    text-decoration: none;
+}
+.hero-ws {
+    position: relative;
+}
+.hero {
+    position: absolute;
+}
+.hero {
+    top: 20px;
+    left: 20px;
+}
+.preston-img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+    box-shadow: 10px 10px 15px gray;    
+}
+.hero {
+    font-family: 'Nunito Sans', sans-serif;
+    padding: 10px;    
+    background-color: #040935;
+    opacity: .65;
+}
 
+
+.condition {
+    text-align: right;
+    color: white;
+    padding: 2px;
+}
+.info {
+    color:  rgb(170, 241, 28);
+    font-weight: 700;
+}    
+
+.ws-info th {
+    color: skyblue;
+    position: relative;
+    text-align: center;
+    font-size: 1.175em;    
+    padding: 0;
+    margin: 0;   
+}
+hr {
+    margin: 0;
+}
+
+.forecast {
+    display: none;
+    justify-items: center;
+    margin: auto;
+}
+#forecast-header {
+    text-align: center;
+    font-family: 'Segoe UI';
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-size: 2em;
+    text-shadow: 3px 3px 5px gray;
+}
+.forecast-block {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: auto;
+    box-shadow: 8px 8px 10px gray;
+    justify-content: space-evenly;
+    background-color: #0C3B58;
+    text-align: center;
+}
+.weekday {
+    flex: 1 1 100%;
+    background-color: rgb(12, 59, 88);
+    font-size: 16px;   
+    padding: 5px;
+}
+.days {
+    display: block;
+    padding: 6px 25px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 1.25em;
+    letter-spacing: 2px;
+    background-color: rgb(36, 109, 143);
+    color: wheat;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.icon {
+    width: 80px;
+    height: auto;    
+    margin: -15px 0px;
+    
+    
+}
+.data {
+    display: block;
+    padding: 5px 5px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25em;
+    justify-content: space-evenly;
+    
+}
 .article {
     padding: 20px;
     background-color: #e4f0f3;
-    margin: 20px;
-    padding: 20px;
+    margin: 30px 0;
 }
 .park {
     display: block;
-    width: 40%;
+    width: 60%;
     height: auto;
     box-shadow: 5px 5px 10px gray;
     margin: auto;
@@ -148,7 +261,7 @@ li .active {
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 700;
     margin: 0;
-    padding: 20px 20px 0 20px;
+    padding-top: 20px;
     text-align: center;
 }
 .article-author {
@@ -164,15 +277,9 @@ li .active {
     font-size: 1em;
     font-family: 'Roboto', sans-serif;
     margin: 0;
-    padding: 5px 20px;
+    padding: 5px 0;
     
 }
-.read {
-    color: navy;
-    text-decoration: none;
-    font-style: italic;    
-}
-
 .contact {
     padding: 20px;
     margin: 15px 0;
@@ -180,17 +287,15 @@ li .active {
     justify-content: center;
     align-items: center;
 }
-
 .map {
-    display: none;        
+    display: none;
     height: 240px;
     width: 350px;
     margin-right: 60px;
     justify-content: center;
     text-align: center;
-    box-shadow: 10px 10px 15px gray;
+    box-shadow: 5px 5px 15px gray;
 }
-
 .tw-title {
     width: 100%;
     font-size: 1.3rem;
@@ -199,7 +304,6 @@ li .active {
     margin: 0;
     padding: 5px 0;
 }
-
 .tw-info>h3 {
     display: block;
     font-size: 1rem;
@@ -208,87 +312,64 @@ li .active {
     margin: 0;
     font-weight: 700;
 }
-
 .soc-media {
     margin-top: 10px;
-    padding: 7px;
+    padding: 2px;
     width: 40px;
     height: auto;
 }
-
-footer p {
-    margin: auto;
-    font-family: 'Roboto', sans-serif;
+.read {
+    color: navy;
     text-decoration: none;
-    list-style-type: none;
+    font-style: italic;    
+}
+
+.thanks {
     text-align: center;
+    font-family: 'Segoe UI';
+    color: navy;
+    text-shadow: 2px 2px 5px gray;
+    margin: 40px auto;
 }
-
-footer {
-    margin: auto;
-    margin-top: 20px;
-    color: white;
-    background-color: #1c1c57;
-    padding: 15px 0;
-}
-
-footer #byui {
-    color: #f5deb3;
-    text-decoration: none;
-}
-
-img[data-src] {
+img[data-src]  {
     filter: blur(0.4em);
 }
-
+  
 img {
     filter: blur(0em);
     transition: filter 2s;
 }
-
-.snapshot {
-    font-family: 'Segoe UI';
-    text-align: center;
-    color: rgb(8, 14, 87);
-    text-shadow: 3px 3px 5px gray;
-    font-size: 2.25rem;
+.open {
+    color: cyan;
+    text-decoration: none;
 }
-
-div.townDetail {
-    font-family: 'Segoe UI';
-    display: flex;
-    flex-direction: column;
-
+.eventHead {
+    margin: 20px;
+    font-size: 1.8em;
+    text-shadow: 2px 2px 5px gray;
 }
-
-.townDetail img {
-    max-width: 100%;
-}
-
-section.townDetail-section {
-    width: 320px;
-    color: #00303F;
-    align-content: center;
-    margin: 20px auto;
-    padding: 0 25px 25px;
-    background-color: rgb(190, 216, 233);
-    box-shadow: 10px 10px 10px rgb(165, 177, 187);
-    text-align: center;
-}
-.townDetail-section h4 {
-    width: 280px;
+.events {
+    width: 60%;    
+    text-align: center;    
     margin: auto;
-    color:navy;
-    font-style: italic;		
+    font-family: 'Segoe UI';
+    padding: 10px;    
+    background-color: rgb(224, 231, 243);
 }
-.townDetail-section p {
-    font-weight: 600;
+.event-image {    
+    position: relative;     
+    width: 60%;
+    height: auto;
+    justify-items: center;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 8px 8px 12px gray;
+    margin: 10px auto;
+    
 }
-
-.townDetail-section img {
-    width: 300px;
-    height: 220px;
-    overflow: hidden;
-    object-fit: cover;
-    box-shadow: 5px 5px 10px rgb(106, 126, 122);
-}    
+.events p {
+    font-size: 1em;    
+    font-weight: 700;
+    color: navy;
+    padding: 0 10px;
+}

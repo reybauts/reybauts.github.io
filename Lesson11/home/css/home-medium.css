@@ -91,5 +91,14 @@
     }
     section.townDetail-section:nth-child(even) {
         flex-direction: row-reverse;
-    }
+	}
+	.park {
+		float: right;
+		margin: 20px;
+	}
+	.article {
+		width: 80%;
+		margin: auto;
+		margin-top: 25px;
+	}
 }
