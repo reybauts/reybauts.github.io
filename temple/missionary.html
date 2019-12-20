@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Temple Inn & Suites | Missionary</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Missionary Page">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico">
+    <script src="js/lazy-script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logobar">
+            <a href="./">
+                <img class="logohead" src="images/temple-logo.png" alt="Temple Inn & Suites Logo">
+            </a>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="#" class="menu" onclick="toggleMenu()">&#9776;</a></li>
+                    <li><a href="./">Home</a></li>
+                    <li><a href="temples.html">Temples</a></li>
+                    <li><a href="reservations.html">Reservations</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="contactbox">
+        <h1 class="titles">Full-Time Temple Missionaries</h1>
+        <div class="missionpage">
+            <div class="row">
+                <div class="column">
+                    <h4 class="long">Long-term Accommodations</h4>
+                    <p class="smallcenter">We offer rooms with a Queen-size or King-size bed with a kitchenette or a full kitchen. Both include basic kitchen appliances, cookware, and dinnerware. Washer/Dryer also included.</p>
+                    <br>
+                    <div>
+                        <picture class="bedimg">
+                            <img src="images/placeholder.jpg" data-src="images/bedroom.jpg" alt="bedroom suite">
+                        </picture>
+                        <div class="text"></div>
+                    </div>
+                </div>
+                <div class="column contactform">
+                    <h4>Contact Us</h4>
+                    <form method="GET" action="thanks.html" name="contact">
+                        <label for="contactname">Name</label>
+                        <input id="contactname" type="text" name="name">
+                        <label for="contactemail">Email</label>
+                        <input id="contactemail" type="text" name="email">
+                        <label for="contactsubject">Subject</label>
+                        <input id="contactsubject" type="text" name="subject">
+                        <label for="contactmessage">Message</label>
+                        <textarea id="contactmessage" name="message"></textarea>
+                        <div id="conbutton">
+                            <input class="contactbutton" type="submit" value="Send Message">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;2019 Temple Inn & Suites | <a class="sources" href="sources.html">Attributions</a> | Rey Bautista<br>
+            <span id="currentdate">
+            </span>
+        </p>
+    </footer>
+    <script src="js/temple.js"></script>
+</body>
+
+</html>
